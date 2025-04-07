@@ -1,0 +1,17 @@
+# Core ML & Neural Network
+torch
+transformers
+
+# Parsing and DSL for glyphs
+lark
+
+# Numeric computation
+numpy
+
+# (Optional but helpful)
+tqdm            # Progress bars during training
+scikit-learn    # Evaluation tools
+matplotlib      # For visualizing echo weights or training loss
+
+# (Optional for file/directory utilities)
+python-dotenv   # If you want to manage secret keys, future deployment

@@ -1,0 +1,25 @@
+# 🧠 Model artifacts
+*.pt
+*.pth
+*.ckpt
+
+# 🌿 Virtual environments
+venv/
+temple/
+.env
+.env.*
+
+# 🗃️ Python cache
+__pycache__/
+*.py[cod]
+
+# 🔁 Logs, seeds, echoes
+*.log
+ark/echoes/
+ark/seeds/
+
+# ⚙️ Editor & system files
+*.DS_Store
+.vscode/
+.idea/
+*.swp
