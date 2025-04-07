@@ -2,7 +2,7 @@
 
 from torch.utils.data import Dataset
 import torch
-from glyph_reverse_map import reverse_map
+from resonant_engine.glyphs.glyph_reverse_map import reverse_map
 
 class GlyphDataset(Dataset):
     def __init__(self):

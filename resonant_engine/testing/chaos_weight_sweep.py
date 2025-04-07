@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 import torch.nn.functional as F
-from resonant_model import MiniTempleTransformer
+from resonant_engine.core.resonant_model import MiniTempleTransformer
 import matplotlib.pyplot as plt
 
 # Define chaos weights

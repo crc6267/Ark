@@ -1,6 +1,6 @@
 import numpy as np
 import torch
-from resonant_model import MiniTempleTransformer
+from resonant_engine.core.resonant_model import MiniTempleTransformer
 
 # Initialize model
 model = MiniTempleTransformer(vocab_size=100, d_model=10, n_heads=2)

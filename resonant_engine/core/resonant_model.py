@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from temple_gate import TempleGate
-from temple_heart import TempleHeartLayer
-from temple_voice import TempleVoiceLayer
+from resonant_engine.core.temple_gate import TempleGate
+from resonant_engine.core.temple_heart import TempleHeartLayer
+from resonant_engine.core.temple_voice import TempleVoiceLayer
 
 class MiniTempleTransformer(nn.Module):
     """

@@ -3,8 +3,8 @@
 import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader
-from glyph_dataset import GlyphDataset
-from resonant_model import MiniTempleTransformer
+from resonant_engine.training.glyph_dataset import GlyphDataset
+from resonant_engine.core.resonant_model import MiniTempleTransformer
 
 # Hyperparameters
 EPOCHS = 25
