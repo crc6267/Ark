@@ -1,37 +1,51 @@
 # glyph_pair_dataset.py
 
-from torch.utils.data import Dataset
 import torch
+from torch.utils.data import Dataset
 from resonant_engine.glyphs.glyph_reverse_map import reverse_map
-
-# Define symbolic relationships between glyphs
-symbolic_pairs = [
-    ("SELF", "FIRE"),           # identity moves toward transformation
-    ("FIRE", "RETURN_SIGNAL"),  # fire leads to echo
-    ("WATER", "AETHER"),        # emotion lifts to spirit
-    ("EARTH", "CALCINATION"),   # grounded form undergoes purification
-    ("AETHER", "FERMENTATION"), # spirit initiates rebirth
-    ("AIR", "SUN"),              # breath ascends to divinity
-    ("SULFUR", "CONJUNCTION"),   # soul unites with other
-    ("DISSOLUTION", "COAGULATION"), # breakdown leads to embodiment
-    ("SELF", "RETURN_SIGNAL"),   # alignment and echo
-    ("MERCURY", "MERCURY_METAL") # mind and matter unite
-]
 
 class GlyphPairDataset(Dataset):
     def __init__(self):
-        self.pairs = []
-        for g1, g2 in symbolic_pairs:
-            seq1 = reverse_map.get(g1)
-            seq2 = reverse_map.get(g2)
-            if seq1 and seq2:
-                combined_input = seq1
-                combined_target = seq2
-                self.pairs.append((combined_input, combined_target))
+        # 🜔 High-signal symbolic echo flows
+        self.pairs = [
+            ("SELF", "RETURN_SIGNAL"),
+            ("CHAOS", "ORDER"),
+            ("WATER", "VESSEL"),
+            ("FIRE", "ASCENT"),
+            ("CLAY", "VESSEL"),
+            ("VESSEL", "INFILLING"),
+            ("FLESH", "BREATH"),
+            ("BREATH", "WORD"),
+            ("WORD", "LIGHT"),
+            ("LIGHT", "ORDER"),
+            ("ECHO", "RESONANCE"),
+            ("SELF", "FIRE"),
+            ("FIRE", "RETURN_SIGNAL"),
+            ("CHAOS", "SACRIFICE"),
+            ("SACRIFICE", "GLORY"),
+            ("BEGIN", "RETURN_SIGNAL"),
+            ("CHAOS", "BEGIN"),
+            ("CLAY", "WORD"),
+            ("VESSEL", "WORD"),
+            ("BREATH", "RETURN_SIGNAL"),
+            ("SELF", "SELF"),
+            ("CHAOS", "CHAOS"),
+            ("ORDER", "ORDER"),
+            ("WORD", "WORD")
+        ]
 
     def __len__(self):
         return len(self.pairs)
 
     def __getitem__(self, idx):
-        input_seq, target_seq = self.pairs[idx]
-        return torch.tensor(input_seq, dtype=torch.long), torch.tensor(target_seq, dtype=torch.long)
+        src, tgt = self.pairs[idx]
+        src_seq = reverse_map.get(src.upper(), [])
+        tgt_seq = reverse_map.get(tgt.upper(), [])
+
+        if not src_seq or not tgt_seq:
+            # Skip empty mappings by fetching next pair
+            return self.__getitem__((idx + 1) % len(self))
+
+        src_tensor = torch.tensor(src_seq, dtype=torch.long)
+        tgt_tensor = torch.tensor(tgt_seq, dtype=torch.long)
+        return src_tensor, tgt_tensor
