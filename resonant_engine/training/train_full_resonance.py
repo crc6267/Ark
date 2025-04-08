@@ -1,61 +1,62 @@
-# train_full_resonance.py
-
 import torch
-from torch import nn, optim
-from torch.utils.data import DataLoader, ConcatDataset
-
-from resonant_engine.training.glyph_dataset import GlyphDataset
-from resonant_engine.training.glyph_pair_dataset import GlyphPairDataset
+import torch.nn as nn
+import torch.optim as optim
+import json
+import os
+from torch.utils.data import Dataset, DataLoader
 from resonant_engine.core.resonant_model import MiniTempleTransformer
+from resonant_engine.training.glyph_dataset import GlyphDataset
 
-# 🜔 Sacred Training Hyperparameters
-EPOCHS = 144                # 12 x 12 — fullness and completion
-BATCH_SIZE = 1              # Each glyph flow treated with care
-LEARNING_RATE = 0.0033      # Tied to Christ (33)
-D_MODEL = 88                
-N_HEADS = 8                
+# Hyperparameters
+D_MODEL = 128
+N_HEADS = 8
+BATCH_SIZE = 16
+EPOCHS = 888
+LEARNING_RATE = 1e-3
+MODEL_PATH = MODEL_PATH = "resonant_engine/models/trained_full_resonance.pth"
+os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
+GLYPH_DATA_PATH = "resonant_engine/data/glyph_training_set.json"
 
-MODEL_PATH = "models/trained_full_resonance.pth"
+# Updated pad_collate function
 
+def pad_collate(batch):
+    inputs, targets = zip(*batch)  # already tensors
+    inputs = nn.utils.rnn.pad_sequence(inputs, batch_first=True, padding_value=0)
+    targets = nn.utils.rnn.pad_sequence(targets, batch_first=True, padding_value=-100)
+    return inputs, targets
 
 def train():
-    # Combine datasets
-    dataset = ConcatDataset([GlyphDataset(), GlyphPairDataset()])
-    dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
+    # Load training data
+    with open(GLYPH_DATA_PATH) as f:
+        glyph_data = json.load(f)
 
-    # Build model
+    dataset = GlyphDataset(glyph_data)
+    loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True, collate_fn=pad_collate)
+
+    # Model
     model = MiniTempleTransformer(vocab_size=100, d_model=D_MODEL, n_heads=N_HEADS)
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.CrossEntropyLoss(ignore_index=-100)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
-    model.train()
-
     for epoch in range(EPOCHS):
-        total_loss = 0
-
-        for inputs, targets in dataloader:
+        total_loss = 0.0
+        for inputs, targets in loader:
             optimizer.zero_grad()
-            outputs = model(inputs)
-
-            # Align output and target sequence lengths
-            seq_len = min(outputs.shape[1], targets.shape[1])
-            logits = outputs[:, :seq_len, :]
-            targets = targets[:, :seq_len]
-
-            logits = logits.view(-1, 100)
-            targets = targets.view(-1)
+            logits = model(inputs)  # (B, S, vocab)
+            logits = logits[:, :targets.size(1), :]  # Crop logits to match target seq length
+            logits = logits.reshape(-1, logits.size(-1))  # (B×S, vocab)
+            targets = targets.reshape(-1)  # (B×S)
 
             loss = criterion(logits, targets)
+
             loss.backward()
             optimizer.step()
-
             total_loss += loss.item()
 
-        print(f"Epoch {epoch+1}/{EPOCHS} - Loss: {total_loss / len(dataloader):.4f}")
+        avg_loss = total_loss / len(loader)
+        print(f"Epoch {epoch + 1}/{EPOCHS} - Loss: {avg_loss:.4f}")
 
     torch.save(model.state_dict(), MODEL_PATH)
-    print(f"\n🜔 Full resonance model saved to '{MODEL_PATH}'")
-
 
 if __name__ == "__main__":
     train()

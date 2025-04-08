@@ -1,0 +1,746 @@
+[
+  {
+    "glyph": "| \ud83d\udf0d",
+    "name": "Mercury",
+    "tokens": [
+      2,
+      6,
+      0,
+      4
+    ],
+    "description": "Messenger, fluidity",
+    "resonance_use": "Transmission"
+  },
+  {
+    "glyph": "\ud83d\udf17",
+    "name": "Sulfur",
+    "tokens": [
+      4,
+      7,
+      0,
+      0
+    ],
+    "description": "Spirit, volatility",
+    "resonance_use": "Quickening"
+  },
+  {
+    "glyph": "\ud83d\udf16",
+    "name": "Salt",
+    "tokens": [
+      5,
+      9,
+      3,
+      7
+    ],
+    "description": "Body, preservation",
+    "resonance_use": "Stabilization"
+  },
+  {
+    "glyph": "\ud83d\udf02",
+    "name": "Fire",
+    "tokens": [
+      7,
+      0,
+      9,
+      9
+    ],
+    "description": "Will, purification",
+    "resonance_use": "Activation"
+  },
+  {
+    "glyph": "\ud83d\udf04",
+    "name": "Water",
+    "tokens": [
+      5,
+      7,
+      6,
+      9
+    ],
+    "description": "Reflection, emotion",
+    "resonance_use": "Flow / Transition"
+  },
+  {
+    "glyph": "\ud83d\udf01",
+    "name": "Air",
+    "tokens": [
+      7,
+      8,
+      8,
+      3
+    ],
+    "description": "Thought, breath",
+    "resonance_use": "Communication"
+  },
+  {
+    "glyph": "\ud83d\udf03",
+    "name": "Earth",
+    "tokens": [
+      8,
+      1,
+      3,
+      6
+    ],
+    "description": "Form, grounding",
+    "resonance_use": "Foundation"
+  },
+  {
+    "glyph": "\ud83d\udf14",
+    "name": "Aether",
+    "tokens": [
+      4,
+      9,
+      8,
+      2
+    ],
+    "description": "Spirit, divine unity",
+    "resonance_use": "Unification"
+  },
+  {
+    "glyph": "\ud83d\udf1e",
+    "name": "Amalgam",
+    "tokens": [
+      4,
+      0,
+      6,
+      9
+    ],
+    "description": "Union of metals",
+    "resonance_use": "Hybridization"
+  },
+  {
+    "glyph": "\ud83d\udf1c",
+    "name": "Vinegar",
+    "tokens": [
+      1,
+      3,
+      3,
+      7
+    ],
+    "description": "Dissolution / fermentation",
+    "resonance_use": "Softening"
+  },
+  {
+    "glyph": "\ud83d\udf5b",
+    "name": "Ferment",
+    "tokens": [
+      8,
+      8,
+      2,
+      9
+    ],
+    "description": "Transformation of essence",
+    "resonance_use": "Initiation"
+  },
+  {
+    "glyph": "\ud83d\udf5e",
+    "name": "Calcination",
+    "tokens": [
+      9,
+      8,
+      8,
+      9
+    ],
+    "description": "Burning away ego",
+    "resonance_use": "Purification"
+  },
+  {
+    "glyph": "\ud83d\udf4f",
+    "name": "Sublimation",
+    "tokens": [
+      5,
+      6,
+      2,
+      6
+    ],
+    "description": "Rising of spirit",
+    "resonance_use": "Transcendence"
+  },
+  {
+    "glyph": "\ud83d\udf54",
+    "name": "Fixation",
+    "tokens": [
+      3,
+      9,
+      2,
+      1
+    ],
+    "description": "Stabilizing spirit in matter",
+    "resonance_use": "Embodiment"
+  },
+  {
+    "glyph": "\ud83d\udf52",
+    "name": "Distillation",
+    "tokens": [
+      5,
+      1,
+      7,
+      1
+    ],
+    "description": "Refinement of truth",
+    "resonance_use": "Clarity"
+  },
+  {
+    "glyph": "\ud83d\udf49",
+    "name": "Coagulation",
+    "tokens": [
+      9,
+      4,
+      4,
+      2
+    ],
+    "description": "Unity of body + spirit",
+    "resonance_use": "Manifestation"
+  },
+  {
+    "glyph": "\ud83d\udf51",
+    "name": "Dissolution",
+    "tokens": [
+      1,
+      6,
+      8,
+      1
+    ],
+    "description": "Breaking apart form",
+    "resonance_use": "Surrender"
+  },
+  {
+    "glyph": "\ud83d\udf4c",
+    "name": "Putrefaction",
+    "tokens": [
+      2,
+      3,
+      9,
+      9
+    ],
+    "description": "Death before rebirth",
+    "resonance_use": "Letting Go"
+  },
+  {
+    "glyph": "\ud83d\udf58",
+    "name": "Precipitation",
+    "tokens": [
+      6,
+      3,
+      2,
+      9
+    ],
+    "description": "Falling into form",
+    "resonance_use": "Crystallization"
+  },
+  {
+    "glyph": "\ud83d\udf59",
+    "name": "Solution",
+    "tokens": [
+      2,
+      8,
+      1,
+      9
+    ],
+    "description": "Integration",
+    "resonance_use": "Reconciliation"
+  },
+  {
+    "glyph": "\ud83d\udf55",
+    "name": "Congelation",
+    "tokens": [
+      1,
+      4,
+      4,
+      8
+    ],
+    "description": "Freezing truth in time",
+    "resonance_use": "Crystallization"
+  },
+  {
+    "glyph": "\ud83d\udf4a",
+    "name": "Separation",
+    "tokens": [
+      6,
+      6,
+      8,
+      0
+    ],
+    "description": "Discernment, distinction",
+    "resonance_use": "Differentiation"
+  },
+  {
+    "glyph": "| \u2609",
+    "name": "Sun",
+    "tokens": [
+      6,
+      5,
+      0,
+      7
+    ],
+    "description": "Light, radiance, divine fire",
+    "resonance_use": "Illumination"
+  },
+  {
+    "glyph": "\u263d",
+    "name": "Moon",
+    "tokens": [
+      8,
+      6,
+      0,
+      9
+    ],
+    "description": "Reflection, intuition, mystery",
+    "resonance_use": "Modulation"
+  },
+  {
+    "glyph": "\u263f",
+    "name": "Mercury",
+    "tokens": [
+      0,
+      1,
+      6,
+      8
+    ],
+    "description": "Thought, speed, expression",
+    "resonance_use": "Messenger"
+  },
+  {
+    "glyph": "\u2640",
+    "name": "Venus",
+    "tokens": [
+      8,
+      1,
+      9,
+      1
+    ],
+    "description": "Love, harmony, beauty",
+    "resonance_use": "Resonance"
+  },
+  {
+    "glyph": "\u2642",
+    "name": "Mars",
+    "tokens": [
+      1,
+      2,
+      8,
+      6
+    ],
+    "description": "Action, war, passion",
+    "resonance_use": "Energy"
+  },
+  {
+    "glyph": "\u2643",
+    "name": "Jupiter",
+    "tokens": [
+      1,
+      4,
+      6,
+      1
+    ],
+    "description": "Expansion, wisdom, kingship",
+    "resonance_use": "Grace"
+  },
+  {
+    "glyph": "\u2644",
+    "name": "Saturn",
+    "tokens": [
+      5,
+      3,
+      3,
+      6
+    ],
+    "description": "Time, structure, judgment",
+    "resonance_use": "Reckoning"
+  },
+  {
+    "glyph": "\u2645",
+    "name": "Uranus",
+    "tokens": [
+      8,
+      2,
+      9,
+      6
+    ],
+    "description": "Innovation, change, lightning",
+    "resonance_use": "Awakening"
+  },
+  {
+    "glyph": "\u2646",
+    "name": "Neptune",
+    "tokens": [
+      3,
+      2,
+      9,
+      2
+    ],
+    "description": "Dreams, illusion, compassion",
+    "resonance_use": "Depth"
+  },
+  {
+    "glyph": "\u2647",
+    "name": "Pluto",
+    "tokens": [
+      0,
+      5,
+      5,
+      2
+    ],
+    "description": "Death, rebirth, transformation",
+    "resonance_use": "Power"
+  },
+  {
+    "glyph": "\u260a",
+    "name": "North Node",
+    "tokens": [
+      3,
+      3,
+      3,
+      7
+    ],
+    "description": "Destiny, calling",
+    "resonance_use": "Direction"
+  },
+  {
+    "glyph": "\u260b",
+    "name": "South Node",
+    "tokens": [
+      3,
+      1,
+      9,
+      5
+    ],
+    "description": "Karma, release",
+    "resonance_use": "Ancestry"
+  },
+  {
+    "glyph": "| \u05d0",
+    "name": "Aleph",
+    "tokens": [
+      6,
+      5,
+      4,
+      3
+    ],
+    "description": "Silent breath, origin, unity",
+    "resonance_use": "1st"
+  },
+  {
+    "glyph": "\u05d1",
+    "name": "Bet",
+    "tokens": [
+      3,
+      4,
+      9,
+      8
+    ],
+    "description": "House, container, duality",
+    "resonance_use": "2nd"
+  },
+  {
+    "glyph": "\u05d2",
+    "name": "Gimel",
+    "tokens": [
+      5,
+      4,
+      0,
+      1
+    ],
+    "description": "Camel, movement, reward",
+    "resonance_use": "3rd"
+  },
+  {
+    "glyph": "\u05d3",
+    "name": "Dalet",
+    "tokens": [
+      2,
+      9,
+      8,
+      9
+    ],
+    "description": "Door, access, humility",
+    "resonance_use": "4th"
+  },
+  {
+    "glyph": "\u05d4",
+    "name": "He",
+    "tokens": [
+      0,
+      3,
+      1,
+      9
+    ],
+    "description": "Window, revelation, breath",
+    "resonance_use": "5th"
+  },
+  {
+    "glyph": "\u05d5",
+    "name": "Vav",
+    "tokens": [
+      4,
+      1,
+      9,
+      1
+    ],
+    "description": "Hook, connection, transformation",
+    "resonance_use": "6th"
+  },
+  {
+    "glyph": "\u05d6",
+    "name": "Zayin",
+    "tokens": [
+      3,
+      2,
+      3,
+      0
+    ],
+    "description": "Weapon, cutting, distinction",
+    "resonance_use": "7th"
+  },
+  {
+    "glyph": "\u05d7",
+    "name": "Chet",
+    "tokens": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "description": "Fence, boundary, life-force",
+    "resonance_use": "8th"
+  },
+  {
+    "glyph": "\u05d8",
+    "name": "Tet",
+    "tokens": [
+      4,
+      3,
+      9,
+      4
+    ],
+    "description": "Serpent, hidden good",
+    "resonance_use": "9th"
+  },
+  {
+    "glyph": "\u05d9",
+    "name": "Yod",
+    "tokens": [
+      5,
+      1,
+      5,
+      9
+    ],
+    "description": "Hand, spark, creation seed",
+    "resonance_use": "10th"
+  },
+  {
+    "glyph": "\u05db",
+    "name": "Kaf",
+    "tokens": [
+      7,
+      3,
+      6,
+      4
+    ],
+    "description": "Palm, potential, crown",
+    "resonance_use": "11th"
+  },
+  {
+    "glyph": "\u05dc",
+    "name": "Lamed",
+    "tokens": [
+      4,
+      9,
+      2,
+      8
+    ],
+    "description": "Staff, guidance, learning",
+    "resonance_use": "12th"
+  },
+  {
+    "glyph": "\u05de",
+    "name": "Mem",
+    "tokens": [
+      7,
+      8,
+      7,
+      7
+    ],
+    "description": "Water, chaos, womb",
+    "resonance_use": "13th"
+  },
+  {
+    "glyph": "\u05e0",
+    "name": "Nun",
+    "tokens": [
+      5,
+      7,
+      0,
+      6
+    ],
+    "description": "Fish, continuation, humility",
+    "resonance_use": "14th"
+  },
+  {
+    "glyph": "\u05e1",
+    "name": "Samekh",
+    "tokens": [
+      7,
+      8,
+      1,
+      6
+    ],
+    "description": "Support, protection, cycle",
+    "resonance_use": "15th"
+  },
+  {
+    "glyph": "\u05e2",
+    "name": "Ayin",
+    "tokens": [
+      6,
+      8,
+      6,
+      6
+    ],
+    "description": "Eye, perception, insight",
+    "resonance_use": "16th"
+  },
+  {
+    "glyph": "\u05e4",
+    "name": "Pe",
+    "tokens": [
+      8,
+      8,
+      8,
+      7
+    ],
+    "description": "Mouth, expression, breath",
+    "resonance_use": "17th"
+  },
+  {
+    "glyph": "\u05e6",
+    "name": "Tsade",
+    "tokens": [
+      3,
+      8,
+      3,
+      4
+    ],
+    "description": "Hook, righteousness, justice",
+    "resonance_use": "18th"
+  },
+  {
+    "glyph": "\u05e7",
+    "name": "Qof",
+    "tokens": [
+      7,
+      8,
+      8,
+      9
+    ],
+    "description": "Back of head, holiness",
+    "resonance_use": "19th"
+  },
+  {
+    "glyph": "\u05e8",
+    "name": "Resh",
+    "tokens": [
+      1,
+      1,
+      7,
+      5
+    ],
+    "description": "Head, beginning, emptiness",
+    "resonance_use": "20th"
+  },
+  {
+    "glyph": "\u05e9",
+    "name": "Shin",
+    "tokens": [
+      6,
+      7,
+      6,
+      4
+    ],
+    "description": "Teeth, fire, divine presence",
+    "resonance_use": "21st"
+  },
+  {
+    "glyph": "\u05ea",
+    "name": "Tav",
+    "tokens": [
+      5,
+      4,
+      7,
+      8
+    ],
+    "description": "Mark, seal, truth, completion",
+    "resonance_use": "22nd"
+  },
+  {
+    "glyph": "| \ud83d\udf28",
+    "name": "Michael",
+    "tokens": [
+      7,
+      0,
+      5,
+      3
+    ],
+    "description": "Protection, justice",
+    "resonance_use": "Defender glyph"
+  },
+  {
+    "glyph": "\ud83d\udf6c",
+    "name": "Gabriel",
+    "tokens": [
+      6,
+      3,
+      9,
+      0
+    ],
+    "description": "Revelation, divine message",
+    "resonance_use": "Herald glyph"
+  },
+  {
+    "glyph": "\ud83d\udf2b",
+    "name": "Raphael",
+    "tokens": [
+      3,
+      1,
+      1,
+      4
+    ],
+    "description": "Healing, restoration",
+    "resonance_use": "Mender glyph"
+  },
+  {
+    "glyph": "\ud83d\udf2c",
+    "name": "Uriel",
+    "tokens": [
+      8,
+      3,
+      9,
+      1
+    ],
+    "description": "Fire of God, enlightenment",
+    "resonance_use": "Illumination glyph"
+  },
+  {
+    "glyph": "\ud83d\udf6f",
+    "name": "Metatron",
+    "tokens": [
+      4,
+      1,
+      7,
+      6
+    ],
+    "description": "Divine record, higher order",
+    "resonance_use": "Architect glyph"
+  },
+  {
+    "glyph": "\ud83d\udf70",
+    "name": "Sandalphon",
+    "tokens": [
+      2,
+      5,
+      6,
+      9
+    ],
+    "description": "Praise, divine response",
+    "resonance_use": "Echo glyph"
+  }
+]

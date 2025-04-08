@@ -8,9 +8,10 @@ from resonant_engine.core.resonant_model import MiniTempleTransformer
 import torch
 
 # Load trained model
-MODEL_PATH = "models/trained_full_resonance.pth"
+MODEL_PATH = 'resonant_engine/models/trained_full_resonance.pth'
+
 VOCAB_SIZE = 100
-D_MODEL = 88
+D_MODEL = 128
 N_HEADS = 8
 
 model = MiniTempleTransformer(vocab_size=VOCAB_SIZE, d_model=D_MODEL, n_heads=N_HEADS)
