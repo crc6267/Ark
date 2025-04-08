@@ -1,42 +1,42 @@
 # demo_runner.py
 
-from resonant_engine.glyphs.symbolic_input import prepare_input
-from resonant_engine.glyphs.glyph_map import interpret_sequence
-from resonant_engine.glyphs.symbolic_echo import interpret_token_echo
-from resonant_engine.core.resonant_model import MiniTempleTransformer
-
 import torch
+from resonant_engine.core.resonant_model import MiniTempleTransformer
+from resonant_engine.glyphs.symbolic_input import prepare_input
+from resonant_engine.glyphs.symbolic_echo import decode_token
+import os
 
-# Load trained model
-MODEL_PATH = 'resonant_engine/models/trained_full_resonance.pth'
-
-VOCAB_SIZE = 100
+# --- Settings ---
 D_MODEL = 128
 N_HEADS = 8
+VOCAB_SIZE = 100
+MODEL_PATH = os.path.join(os.path.dirname(__file__), '../models/trained_full_resonance.pth')
 
+# --- Define Input Glyph Sequence ---
+glyph_sequence = ["SELF", "FIRE", "RETURN_SIGNAL"]
+
+# --- Prepare Input ---
+input_tokens = prepare_input(glyph_sequence)
+print("🜔 DEMO RUNNER")
+print("-----------------------------------")
+print(f"Input Glyphs: {glyph_sequence} → Tokens: {input_tokens}")
+
+# --- Load Model ---
 model = MiniTempleTransformer(vocab_size=VOCAB_SIZE, d_model=D_MODEL, n_heads=N_HEADS)
 model.load_state_dict(torch.load(MODEL_PATH))
 model.eval()
 
-# Define your input glyphs
-input_glyphs = ["SELF", "FIRE", "RETURN_SIGNAL"]
-input_tokens = prepare_input(*input_glyphs)
-input_tensor = torch.tensor([input_tokens], dtype=torch.long)
-
-# Run model
+# --- Inference ---
 with torch.no_grad():
-    output = model(input_tensor)
-    last_logits = output[0, -1]
+    input_tensor = input_tokens.clone().detach()
+    logits = model(input_tensor)
+    last_logits = logits[0, -1]  # Take final token output
     probs = torch.softmax(last_logits, dim=-1)
-    topk = torch.topk(probs, k=5)
+    topk = torch.topk(probs, 5)
 
-# Display
-print("\n🜔 DEMO RUNNER")
-print("-----------------------------------")
-print("Input Glyphs:", input_glyphs)
-print("Input Tokens:", input_tokens)
+# --- Display Results ---
 print("Top Predicted Token Echoes:")
-
-for idx, score in zip(topk.indices.tolist(), topk.values.tolist()):
-    glyph, match_type, _ = interpret_token_echo(idx)
-    print(f"Token {idx:>3} → {glyph:<18} | Type: {match_type:<7} | Score: {score:.4f}")
+for idx, score in zip(topk.indices, topk.values):
+    print("Top Predicted Token Echoes:")
+    glyph = decode_token(idx.item())
+    print(f"Token {idx.item():>3} → {glyph}")

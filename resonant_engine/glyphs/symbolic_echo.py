@@ -28,6 +28,15 @@ def interpret_token_echo(token):
     # Otherwise return first partial
     return candidates[0][0], "partial", candidates
 
+def decode_token(token_id):
+    """
+    Maps a single token ID back to its glyph name.
+    """
+    token_id = int(token_id)
+    for seq, glyph in glyph_map.items():
+        if seq[0] == token_id:
+            return glyph
+    return "UNKNOWN"
 
 if __name__ == "__main__":
     for t in [4, 2, 38, 7]:

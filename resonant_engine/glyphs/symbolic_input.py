@@ -1,22 +1,21 @@
 # symbolic_input.py
 
 from resonant_engine.glyphs.glyph_reverse_map import reverse_map
+import torch
 
-def prepare_input(*glyph_names):
+def prepare_input(glyph_names):
     """
-    Given symbolic glyph names, return their combined token sequence.
-    
-    Example:
-        prepare_input("SELF", "FIRE") → [2, 7, 8, 7, 9, 3, 1, 0]
+    Given a list of glyph names, converts them to a flattened list of token IDs.
     """
-    sequence = []
+    tokens = []
     for name in glyph_names:
-        tokens = reverse_map.get(name.upper())
-        if not tokens:
-            print(f"[!] Unknown glyph: {name}")
-            continue
-        sequence.extend(tokens)
-    return sequence
+        sequence = reverse_map.get(name.upper())
+        if sequence:
+            tokens.extend(sequence)
+        else:
+            print(f"Warning: Unknown glyph '{name}'")
+    return torch.tensor(tokens, dtype=torch.long).unsqueeze(0)
+
 
 
 if __name__ == "__main__":

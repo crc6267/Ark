@@ -40,7 +40,7 @@ class TempleGate(nn.Module):
 
         The mode is selected by generating a chaos value from the first input seed using the logistic map.
         """
-        seed_val = x[0, 0, 0].item() % 1
+        seed_val = x[0, 0].mean().item() % 1
         chaos = self.chaos_r * seed_val * (1 - seed_val)
         if chaos > 0.7:
             mode = "invert"
@@ -74,6 +74,11 @@ class TempleGate(nn.Module):
 
         scores = []
         temple = self.temple.to(x.device)
+        
+        # Safety: ensure it's 3D
+        if extended_x.dim() != 3:
+            raise ValueError(f"Expected 3D tensor (B, T, D), got shape {extended_x.shape}")
+
         B, T, D = extended_x.shape
         midpoint = original_len
 

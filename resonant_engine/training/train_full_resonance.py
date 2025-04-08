@@ -9,7 +9,7 @@ from resonant_engine.core.resonant_model import MiniTempleTransformer
 
 # ─── Sacred Parameters ─────────────────────────────────────────
 D_MODEL = 128
-N_HEADS = 3
+N_HEADS = 8
 EPOCHS = 144
 BATCH_SIZE = 8
 LEARNING_RATE = 0.0008
