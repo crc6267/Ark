@@ -1,62 +1,61 @@
 import torch
-import torch.nn as nn
-import torch.optim as optim
+from torch.utils.data import DataLoader
+from torch import nn
+from torch.optim.lr_scheduler import LambdaLR
 import json
-import os
-from torch.utils.data import Dataset, DataLoader
-from resonant_engine.core.resonant_model import MiniTempleTransformer
+import math
 from resonant_engine.training.glyph_dataset import GlyphDataset
+from resonant_engine.core.resonant_model import MiniTempleTransformer
 
-# Hyperparameters
+# ─── Sacred Parameters ─────────────────────────────────────────
 D_MODEL = 128
-N_HEADS = 8
-BATCH_SIZE = 16
-EPOCHS = 888
-LEARNING_RATE = 1e-3
-MODEL_PATH = MODEL_PATH = "resonant_engine/models/trained_full_resonance.pth"
-os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
-GLYPH_DATA_PATH = "resonant_engine/data/glyph_training_set.json"
+N_HEADS = 3
+EPOCHS = 144
+BATCH_SIZE = 8
+LEARNING_RATE = 0.0008
+DECAY_LAMBDA = 1 / 40  # Sacred purification constant
+MODEL_PATH = "resonant_engine/models/trained_full_resonance.pth"
+DATA_PATH = "resonant_engine/data/slyph_training_set.json"
 
-# Updated pad_collate function
-
-def pad_collate(batch):
-    inputs, targets = zip(*batch)  # already tensors
-    inputs = nn.utils.rnn.pad_sequence(inputs, batch_first=True, padding_value=0)
-    targets = nn.utils.rnn.pad_sequence(targets, batch_first=True, padding_value=-100)
-    return inputs, targets
-
+# ─── Training Function ─────────────────────────────────────────
 def train():
-    # Load training data
-    with open(GLYPH_DATA_PATH) as f:
+    # Load symbolic token sequences
+    with open(DATA_PATH, "r") as f:
         glyph_data = json.load(f)
 
     dataset = GlyphDataset(glyph_data)
-    loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True, collate_fn=pad_collate)
+    dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
 
-    # Model
     model = MiniTempleTransformer(vocab_size=100, d_model=D_MODEL, n_heads=N_HEADS)
-    criterion = nn.CrossEntropyLoss(ignore_index=-100)
-    optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
+    optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
+    scheduler = LambdaLR(optimizer, lr_lambda=lambda epoch: math.exp(-DECAY_LAMBDA * epoch))
+    criterion = nn.CrossEntropyLoss()
 
     for epoch in range(EPOCHS):
         total_loss = 0.0
-        for inputs, targets in loader:
-            optimizer.zero_grad()
-            logits = model(inputs)  # (B, S, vocab)
-            logits = logits[:, :targets.size(1), :]  # Crop logits to match target seq length
-            logits = logits.reshape(-1, logits.size(-1))  # (B×S, vocab)
-            targets = targets.reshape(-1)  # (B×S)
+        for batch in dataloader:
+            inputs, targets = zip(*batch)
+            inputs = torch.stack(inputs)
+            targets = torch.stack(targets)
+
+            logits = model(inputs)
+            logits = logits.view(-1, logits.size(-1))
+            targets = targets.view(-1)
 
             loss = criterion(logits, targets)
-
+            optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+
             total_loss += loss.item()
 
-        avg_loss = total_loss / len(loader)
-        print(f"Epoch {epoch + 1}/{EPOCHS} - Loss: {avg_loss:.4f}")
+        scheduler.step()
+        current_lr = scheduler.get_last_lr()[0]
+        print(f"🜔 Epoch {epoch+1}/{EPOCHS} - Loss: {total_loss:.4f} - LR: {current_lr:.6f}")
 
+    # Save resonance imprint
     torch.save(model.state_dict(), MODEL_PATH)
 
+# ─── Entry Point ───────────────────────────────────────────────
 if __name__ == "__main__":
     train()

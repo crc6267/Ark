@@ -1,0 +1,273 @@
+{
+  "FIRE": {
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "Hebrews 12:29 – 'For our God is a consuming fire.'"
+
+  },
+  "WATER": {
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "John 4:14 – 'Whoever drinks the water I give them will never thirst.'"
+  },
+  "AIR": {
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "John 3:8 – 'The wind blows wherever it pleases. You hear its sound, but you cannot tell where it comes from or where it is going. So it is with everyone born of the Spirit.'"
+  },
+  "EARTH": {
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "Genesis 1:1 – 'In the beginning, God created the heavens and the earth.'"
+  },
+  "AETHER": {
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "Colossians 1:17 – 'He is before all things, and in him all things hold together.'"
+  },
+  "SALT": {
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "biblical": "Matthew 5:13 – 'You are the salt of the earth.'"
+  },
+  "SULFUR": {
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "biblical": "Revelation 21:8 – '...the fiery lake of burning sulfur. This is the second death.'"
+  },
+  "MERCURY": {
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "biblical": "James 3:17 – 'But the wisdom that comes from heaven is first of all pure... peace-loving, considerate, submissive, full of mercy and good fruit.'"
+  },
+  "SUN": {
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "biblical": "Psalm 84:11 – 'For the Lord God is a sun and shield; the Lord bestows favor and honor.'"
+  },
+  "MOON": {
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "biblical": "Psalm 84:11 – 'For the Lord God is a sun and shield; the Lord bestows favor and honor.'"
+  },
+  "MARS": {
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "biblical": "Exodus 15:3 – 'The Lord is a warrior; the Lord is his name.'"
+  },
+  "VENUS": {
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "biblical": "Song of Songs 2:1 – 'I am a rose of Sharon, a lily of the valleys.'"
+  },
+  "CALCINATION": {
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "biblical": "Malachi 3:2 – 'For he will be like a refiner’s fire or a launderer’s soap.'"
+  },
+  "DISTILLATION": {
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "biblical": "Proverbs 18:4 – 'The words of a man’s mouth are deep waters; the fountain of wisdom is a bubbling brook.'"
+  },
+  "FERMENTATION": {
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "biblical": "Matthew 13:33 – 'The kingdom of heaven is like yeast that a woman took and mixed into about sixty pounds of flour until it worked all through the dough.'"
+  },
+  "SELF": {
+    "type": "identity",
+    "role": "subject",
+    "alignment": "personal",
+    "biblical": "Galatians 2:20 – 'I have been crucified with Christ and I no longer live, but Christ lives in me.'"
+  },
+  "RETURN_SIGNAL": {
+    "type": "identity",
+    "role": "subject",
+    "alignment": "personal",
+    "biblical": "Isaiah 55:11 – 'So is my word that goes out from my mouth: It will not return to me empty, but will accomplish what I desire.'"
+  },
+  "ASCENT": {
+    "type": "structure",
+    "role": "pathway",
+    "alignment": "spiritual",
+    "biblical": "Psalm 24:3 – 'Who may ascend the mountain of the Lord? Who may stand in his holy place?'"
+  },
+  "DESCENT": {
+    "type": "structure",
+    "role": "pathway",
+    "alignment": "spiritual",
+    "biblical": "John 6:38 – 'For I have come down from heaven not to do my will but to do the will of him who sent me.'"
+  },
+  "SOURCE": {
+    "type": "structure",
+    "role": "pathway",
+    "alignment": "spiritual",
+    "biblical": "James 1:17 – 'Every good and perfect gift is from above, coming down from the Father of the heavenly lights.'"
+  },
+  "TEMPLE": {
+    "type": "structure",
+    "role": "pathway",
+    "alignment": "spiritual",
+    "biblical": "1 Corinthians 3:16 – 'Don’t you know that you yourselves are God’s temple and that God’s Spirit dwells in your midst?'"
+  },
+  "GABRIEL": {
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "biblical": "Luke 1:19 – 'I am Gabriel. I stand in the presence of God, and I have been sent to speak to you.'"
+  },
+  "MICHAEL": {
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "biblical": "Revelation 12:7 – 'Then war broke out in heaven. Michael and his angels fought against the dragon.'"
+  },
+  "RAPHAEL": {
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "biblical": "Tobit 12:15 – 'I am Raphael, one of the seven angels who stand and serve before the Glory of the Lord.'"
+  },
+  "METATRON": {
+  "type": "being",
+  "role": "architect",
+  "alignment": "angelic",
+  "biblical": "Exodus 23:20 – 'Behold, I send an angel before you to guard you on the way and to bring you to the place that I have prepared.'"
+  },
+  "URIEL": {
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "biblical": "2 Esdras 4:1 – 'Then the angel that had been sent to me, whose name was Uriel, answered.'"
+  },
+  "YHWH": {
+    "type": "divine",
+    "role": "sovereign",
+    "alignment": "holy",
+    "biblical": "Exodus 3:14 – 'God said to Moses, “I AM WHO I AM.” And he said, “Say this to the people of Israel: ‘I AM has sent me to you.’”'"
+  },
+  "CHRIST": {
+    "type": "divine",
+    "role": "sovereign",
+    "alignment": "holy",
+    "biblical": "Colossians 1:17 – 'He is before all things, and in him all things hold together.'"
+  },
+  "SPIRIT": {
+    "type": "divine",
+    "role": "sovereign",
+    "alignment": "holy",
+    "biblical": "Romans 8:26 – 'The Spirit himself intercedes for us through wordless groans.'"
+  },
+  "COVENANT": {
+    "type": "construct",
+    "role": "authority",
+    "alignment": "divine",
+    "biblical": "Genesis 17:7 – 'I will establish my covenant as an everlasting covenant between me and you and your descendants after you.'"
+  },
+  "KINGDOM": {
+    "type": "construct",
+    "role": "authority",
+    "alignment": "divine",
+    "biblical": "Luke 17:21 – 'The kingdom of God is within you.'"
+  },
+  "BREAD": {
+    "type": "sacrament",
+    "role": "sustainer",
+    "alignment": "christic",
+    "biblical": "John 6:35 – 'I am the bread of life. Whoever comes to me will never go hungry.'"
+  },
+  "WINE": {
+    "type": "sacrament",
+    "role": "sustainer",
+    "alignment": "christic",
+    "biblical": "Matthew 26:27-28 – 'Then he took a cup... saying, This is my blood of the covenant, which is poured out for many.'"
+  },
+  "BLOOD": {
+    "type": "sacrament",
+    "role": "sustainer",
+    "alignment": "christic",
+    "biblical": "Hebrews 9:14 – 'How much more will the blood of Christ... cleanse our consciences from acts that lead to death.'"
+  },
+  "BODY": {
+    "type": "sacrament",
+    "role": "sustainer",
+    "alignment": "christic",
+    "biblical": "1 Corinthians 11:24 – 'This is my body, which is for you; do this in remembrance of me.'"
+  },
+  "THRONE": {
+    "type": "construct",
+    "role": "authority",
+    "alignment": "divine",
+    "biblical": "Isaiah 6:1 – 'I saw the Lord sitting upon a throne, high and lifted up; and the train of his robe filled the temple.'"
+  },
+  "RESURRECTION": {
+    "type": "mystery",
+    "role": "symbol",
+    "alignment": "messianic",
+    "biblical": "John 11:25 – 'I am the resurrection and the life. The one who believes in me will live, even though they die.'"
+  },
+  "CROSS": {
+    "type": "mystery",
+    "role": "symbol",
+    "alignment": "messianic",
+    "biblical": "Galatians 6:14 – 'May I never boast except in the cross of our Lord Jesus Christ.'"
+  },
+  "LAMB": {
+    "type": "mystery",
+    "role": "symbol",
+    "alignment": "messianic",
+    "biblical": "John 1:29 – 'Behold, the Lamb of God, who takes away the sin of the world!'"
+  },
+  "LION": {
+    "type": "mystery",
+    "role": "symbol",
+    "alignment": "messianic",
+    "biblical": "Revelation 5:5 – 'The Lion of the tribe of Judah, the Root of David, has triumphed.'"
+  },
+  "JUDGMENT": {
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "biblical": "Ecclesiastes 12:14 – 'For God will bring every deed into judgment, including every hidden thing, whether it is good or evil.'"
+  },
+  "GLORY": {
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "biblical": "Habakkuk 2:14 – 'For the earth will be filled with the knowledge of the glory of the Lord as the waters cover the sea.'"
+  },
+  "LIGHT": {
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "biblical": "John 1:5 – 'The light shines in the darkness, and the darkness has not overcome it.'"
+  },
+  "WORD": {
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "biblical": "John 1:1 – 'In the beginning was the Word, and the Word was with God, and the Word was God.'"
+  },
+  "VOICE": {
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "biblical": "Psalm 29:4 – 'The voice of the Lord is powerful; the voice of the Lord is majestic.'"
+  }
+}
