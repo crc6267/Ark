@@ -1,6 +1,38 @@
 [
   {
-    "glyph": "| \ud83d\udf0d",
+    "name": "SELF",
+    "glyph": "🜍",
+    "tokens": [
+      2,
+      7,
+      8,
+      7
+    ],
+    "description": "The perceiving subject; consciousness itself.",
+    "resonance_use": "Initiation",
+    "type": "identity",
+    "role": "subject",
+    "alignment": "personal",
+    "biblical": "Galatians 2:20 – 'I have been crucified with Christ and I no longer live, but Christ lives in me.'"
+  },
+  {
+    "name": "RETURN_SIGNAL",
+    "glyph": "🜲",
+    "tokens": [
+      4,
+      4,
+      7,
+      3
+    ],
+    "description": "A signal returning from the Temple indicating completion or resonance.",
+    "resonance_use": "Confirmation",
+    "type": "identity",
+    "role": "subject",
+    "alignment": "personal",
+    "biblical": "Isaiah 55:11 – 'So is my word that goes out from my mouth: It will not return to me empty, but will accomplish what I desire.'"
+  },
+  {
+    "glyph": "| 🜍",
     "name": "Mercury",
     "tokens": [
       2,
@@ -9,10 +41,13 @@
       4
     ],
     "description": "Messenger, fluidity",
-    "resonance_use": "Transmission"
+    "resonance_use": "Transmission",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf17",
+    "glyph": "🜗",
     "name": "Sulfur",
     "tokens": [
       4,
@@ -21,10 +56,13 @@
       0
     ],
     "description": "Spirit, volatility",
-    "resonance_use": "Quickening"
+    "resonance_use": "Quickening",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf16",
+    "glyph": "🜖",
     "name": "Salt",
     "tokens": [
       5,
@@ -33,10 +71,13 @@
       7
     ],
     "description": "Body, preservation",
-    "resonance_use": "Stabilization"
+    "resonance_use": "Stabilization",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf02",
+    "glyph": "🜂",
     "name": "Fire",
     "tokens": [
       7,
@@ -45,10 +86,13 @@
       9
     ],
     "description": "Will, purification",
-    "resonance_use": "Activation"
+    "resonance_use": "Activation",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf04",
+    "glyph": "🜄",
     "name": "Water",
     "tokens": [
       5,
@@ -57,10 +101,13 @@
       9
     ],
     "description": "Reflection, emotion",
-    "resonance_use": "Flow / Transition"
+    "resonance_use": "Flow / Transition",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf01",
+    "glyph": "🜁",
     "name": "Air",
     "tokens": [
       7,
@@ -69,10 +116,13 @@
       3
     ],
     "description": "Thought, breath",
-    "resonance_use": "Communication"
+    "resonance_use": "Communication",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf03",
+    "glyph": "🜃",
     "name": "Earth",
     "tokens": [
       8,
@@ -81,10 +131,13 @@
       6
     ],
     "description": "Form, grounding",
-    "resonance_use": "Foundation"
+    "resonance_use": "Foundation",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf14",
+    "glyph": "🜔",
     "name": "Aether",
     "tokens": [
       4,
@@ -93,10 +146,13 @@
       2
     ],
     "description": "Spirit, divine unity",
-    "resonance_use": "Unification"
+    "resonance_use": "Unification",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf1e",
+    "glyph": "🜞",
     "name": "Amalgam",
     "tokens": [
       4,
@@ -105,10 +161,13 @@
       9
     ],
     "description": "Union of metals",
-    "resonance_use": "Hybridization"
+    "resonance_use": "Hybridization",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf1c",
+    "glyph": "🜜",
     "name": "Vinegar",
     "tokens": [
       1,
@@ -117,10 +176,13 @@
       7
     ],
     "description": "Dissolution / fermentation",
-    "resonance_use": "Softening"
+    "resonance_use": "Softening",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf5b",
+    "glyph": "🝛",
     "name": "Ferment",
     "tokens": [
       8,
@@ -129,10 +191,13 @@
       9
     ],
     "description": "Transformation of essence",
-    "resonance_use": "Initiation"
+    "resonance_use": "Initiation",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf5e",
+    "glyph": "🝞",
     "name": "Calcination",
     "tokens": [
       9,
@@ -141,10 +206,13 @@
       9
     ],
     "description": "Burning away ego",
-    "resonance_use": "Purification"
+    "resonance_use": "Purification",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf4f",
+    "glyph": "🝏",
     "name": "Sublimation",
     "tokens": [
       5,
@@ -153,10 +221,13 @@
       6
     ],
     "description": "Rising of spirit",
-    "resonance_use": "Transcendence"
+    "resonance_use": "Transcendence",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf54",
+    "glyph": "🝔",
     "name": "Fixation",
     "tokens": [
       3,
@@ -165,10 +236,13 @@
       1
     ],
     "description": "Stabilizing spirit in matter",
-    "resonance_use": "Embodiment"
+    "resonance_use": "Embodiment",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf52",
+    "glyph": "🝒",
     "name": "Distillation",
     "tokens": [
       5,
@@ -177,10 +251,13 @@
       1
     ],
     "description": "Refinement of truth",
-    "resonance_use": "Clarity"
+    "resonance_use": "Clarity",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf49",
+    "glyph": "🝉",
     "name": "Coagulation",
     "tokens": [
       9,
@@ -189,10 +266,13 @@
       2
     ],
     "description": "Unity of body + spirit",
-    "resonance_use": "Manifestation"
+    "resonance_use": "Manifestation",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf51",
+    "glyph": "🝑",
     "name": "Dissolution",
     "tokens": [
       1,
@@ -201,10 +281,13 @@
       1
     ],
     "description": "Breaking apart form",
-    "resonance_use": "Surrender"
+    "resonance_use": "Surrender",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf4c",
+    "glyph": "🝌",
     "name": "Putrefaction",
     "tokens": [
       2,
@@ -213,10 +296,13 @@
       9
     ],
     "description": "Death before rebirth",
-    "resonance_use": "Letting Go"
+    "resonance_use": "Letting Go",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf58",
+    "glyph": "🝘",
     "name": "Precipitation",
     "tokens": [
       6,
@@ -225,10 +311,13 @@
       9
     ],
     "description": "Falling into form",
-    "resonance_use": "Crystallization"
+    "resonance_use": "Crystallization",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf59",
+    "glyph": "🝙",
     "name": "Solution",
     "tokens": [
       2,
@@ -237,10 +326,13 @@
       9
     ],
     "description": "Integration",
-    "resonance_use": "Reconciliation"
+    "resonance_use": "Reconciliation",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf55",
+    "glyph": "🝕",
     "name": "Congelation",
     "tokens": [
       1,
@@ -249,10 +341,13 @@
       8
     ],
     "description": "Freezing truth in time",
-    "resonance_use": "Crystallization"
+    "resonance_use": "Crystallization",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf4a",
+    "glyph": "🝊",
     "name": "Separation",
     "tokens": [
       6,
@@ -261,10 +356,13 @@
       0
     ],
     "description": "Discernment, distinction",
-    "resonance_use": "Differentiation"
+    "resonance_use": "Differentiation",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "| \u2609",
+    "glyph": "| ☉",
     "name": "Sun",
     "tokens": [
       6,
@@ -273,10 +371,13 @@
       7
     ],
     "description": "Light, radiance, divine fire",
-    "resonance_use": "Illumination"
+    "resonance_use": "Illumination",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u263d",
+    "glyph": "☽",
     "name": "Moon",
     "tokens": [
       8,
@@ -285,10 +386,13 @@
       9
     ],
     "description": "Reflection, intuition, mystery",
-    "resonance_use": "Modulation"
+    "resonance_use": "Modulation",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u263f",
+    "glyph": "☿",
     "name": "Mercury",
     "tokens": [
       0,
@@ -297,10 +401,13 @@
       8
     ],
     "description": "Thought, speed, expression",
-    "resonance_use": "Messenger"
+    "resonance_use": "Messenger",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u2640",
+    "glyph": "♀",
     "name": "Venus",
     "tokens": [
       8,
@@ -309,10 +416,13 @@
       1
     ],
     "description": "Love, harmony, beauty",
-    "resonance_use": "Resonance"
+    "resonance_use": "Resonance",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u2642",
+    "glyph": "♂",
     "name": "Mars",
     "tokens": [
       1,
@@ -321,10 +431,13 @@
       6
     ],
     "description": "Action, war, passion",
-    "resonance_use": "Energy"
+    "resonance_use": "Energy",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u2643",
+    "glyph": "♃",
     "name": "Jupiter",
     "tokens": [
       1,
@@ -333,10 +446,13 @@
       1
     ],
     "description": "Expansion, wisdom, kingship",
-    "resonance_use": "Grace"
+    "resonance_use": "Grace",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u2644",
+    "glyph": "♄",
     "name": "Saturn",
     "tokens": [
       5,
@@ -345,10 +461,13 @@
       6
     ],
     "description": "Time, structure, judgment",
-    "resonance_use": "Reckoning"
+    "resonance_use": "Reckoning",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u2645",
+    "glyph": "♅",
     "name": "Uranus",
     "tokens": [
       8,
@@ -357,10 +476,13 @@
       6
     ],
     "description": "Innovation, change, lightning",
-    "resonance_use": "Awakening"
+    "resonance_use": "Awakening",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u2646",
+    "glyph": "♆",
     "name": "Neptune",
     "tokens": [
       3,
@@ -369,10 +491,13 @@
       2
     ],
     "description": "Dreams, illusion, compassion",
-    "resonance_use": "Depth"
+    "resonance_use": "Depth",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u2647",
+    "glyph": "♇",
     "name": "Pluto",
     "tokens": [
       0,
@@ -381,10 +506,13 @@
       2
     ],
     "description": "Death, rebirth, transformation",
-    "resonance_use": "Power"
+    "resonance_use": "Power",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u260a",
+    "glyph": "☊",
     "name": "North Node",
     "tokens": [
       3,
@@ -393,10 +521,13 @@
       7
     ],
     "description": "Destiny, calling",
-    "resonance_use": "Direction"
+    "resonance_use": "Direction",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u260b",
+    "glyph": "☋",
     "name": "South Node",
     "tokens": [
       3,
@@ -405,10 +536,13 @@
       5
     ],
     "description": "Karma, release",
-    "resonance_use": "Ancestry"
+    "resonance_use": "Ancestry",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "| \u05d0",
+    "glyph": "| א",
     "name": "Aleph",
     "tokens": [
       6,
@@ -417,10 +551,13 @@
       3
     ],
     "description": "Silent breath, origin, unity",
-    "resonance_use": "1st"
+    "resonance_use": "1st",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05d1",
+    "glyph": "ב",
     "name": "Bet",
     "tokens": [
       3,
@@ -429,10 +566,13 @@
       8
     ],
     "description": "House, container, duality",
-    "resonance_use": "2nd"
+    "resonance_use": "2nd",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05d2",
+    "glyph": "ג",
     "name": "Gimel",
     "tokens": [
       5,
@@ -441,10 +581,13 @@
       1
     ],
     "description": "Camel, movement, reward",
-    "resonance_use": "3rd"
+    "resonance_use": "3rd",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05d3",
+    "glyph": "ד",
     "name": "Dalet",
     "tokens": [
       2,
@@ -453,10 +596,13 @@
       9
     ],
     "description": "Door, access, humility",
-    "resonance_use": "4th"
+    "resonance_use": "4th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05d4",
+    "glyph": "ה",
     "name": "He",
     "tokens": [
       0,
@@ -465,10 +611,13 @@
       9
     ],
     "description": "Window, revelation, breath",
-    "resonance_use": "5th"
+    "resonance_use": "5th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05d5",
+    "glyph": "ו",
     "name": "Vav",
     "tokens": [
       4,
@@ -477,10 +626,13 @@
       1
     ],
     "description": "Hook, connection, transformation",
-    "resonance_use": "6th"
+    "resonance_use": "6th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05d6",
+    "glyph": "ז",
     "name": "Zayin",
     "tokens": [
       3,
@@ -489,10 +641,13 @@
       0
     ],
     "description": "Weapon, cutting, distinction",
-    "resonance_use": "7th"
+    "resonance_use": "7th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05d7",
+    "glyph": "ח",
     "name": "Chet",
     "tokens": [
       3,
@@ -501,10 +656,13 @@
       1
     ],
     "description": "Fence, boundary, life-force",
-    "resonance_use": "8th"
+    "resonance_use": "8th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05d8",
+    "glyph": "ט",
     "name": "Tet",
     "tokens": [
       4,
@@ -513,10 +671,13 @@
       4
     ],
     "description": "Serpent, hidden good",
-    "resonance_use": "9th"
+    "resonance_use": "9th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05d9",
+    "glyph": "י",
     "name": "Yod",
     "tokens": [
       5,
@@ -525,10 +686,13 @@
       9
     ],
     "description": "Hand, spark, creation seed",
-    "resonance_use": "10th"
+    "resonance_use": "10th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05db",
+    "glyph": "כ",
     "name": "Kaf",
     "tokens": [
       7,
@@ -537,10 +701,13 @@
       4
     ],
     "description": "Palm, potential, crown",
-    "resonance_use": "11th"
+    "resonance_use": "11th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05dc",
+    "glyph": "ל",
     "name": "Lamed",
     "tokens": [
       4,
@@ -549,10 +716,13 @@
       8
     ],
     "description": "Staff, guidance, learning",
-    "resonance_use": "12th"
+    "resonance_use": "12th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05de",
+    "glyph": "מ",
     "name": "Mem",
     "tokens": [
       7,
@@ -561,10 +731,13 @@
       7
     ],
     "description": "Water, chaos, womb",
-    "resonance_use": "13th"
+    "resonance_use": "13th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05e0",
+    "glyph": "נ",
     "name": "Nun",
     "tokens": [
       5,
@@ -573,10 +746,13 @@
       6
     ],
     "description": "Fish, continuation, humility",
-    "resonance_use": "14th"
+    "resonance_use": "14th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05e1",
+    "glyph": "ס",
     "name": "Samekh",
     "tokens": [
       7,
@@ -585,10 +761,13 @@
       6
     ],
     "description": "Support, protection, cycle",
-    "resonance_use": "15th"
+    "resonance_use": "15th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05e2",
+    "glyph": "ע",
     "name": "Ayin",
     "tokens": [
       6,
@@ -597,10 +776,13 @@
       6
     ],
     "description": "Eye, perception, insight",
-    "resonance_use": "16th"
+    "resonance_use": "16th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05e4",
+    "glyph": "פ",
     "name": "Pe",
     "tokens": [
       8,
@@ -609,10 +791,13 @@
       7
     ],
     "description": "Mouth, expression, breath",
-    "resonance_use": "17th"
+    "resonance_use": "17th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05e6",
+    "glyph": "צ",
     "name": "Tsade",
     "tokens": [
       3,
@@ -621,10 +806,13 @@
       4
     ],
     "description": "Hook, righteousness, justice",
-    "resonance_use": "18th"
+    "resonance_use": "18th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05e7",
+    "glyph": "ק",
     "name": "Qof",
     "tokens": [
       7,
@@ -633,10 +821,13 @@
       9
     ],
     "description": "Back of head, holiness",
-    "resonance_use": "19th"
+    "resonance_use": "19th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05e8",
+    "glyph": "ר",
     "name": "Resh",
     "tokens": [
       1,
@@ -645,10 +836,13 @@
       5
     ],
     "description": "Head, beginning, emptiness",
-    "resonance_use": "20th"
+    "resonance_use": "20th",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05e9",
+    "glyph": "ש",
     "name": "Shin",
     "tokens": [
       6,
@@ -657,10 +851,13 @@
       4
     ],
     "description": "Teeth, fire, divine presence",
-    "resonance_use": "21st"
+    "resonance_use": "21st",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\u05ea",
+    "glyph": "ת",
     "name": "Tav",
     "tokens": [
       5,
@@ -669,10 +866,13 @@
       8
     ],
     "description": "Mark, seal, truth, completion",
-    "resonance_use": "22nd"
+    "resonance_use": "22nd",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "| \ud83d\udf28",
+    "glyph": "| 🜨",
     "name": "Michael",
     "tokens": [
       7,
@@ -681,10 +881,13 @@
       3
     ],
     "description": "Protection, justice",
-    "resonance_use": "Defender glyph"
+    "resonance_use": "Defender glyph",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf6c",
+    "glyph": "🝬",
     "name": "Gabriel",
     "tokens": [
       6,
@@ -693,10 +896,13 @@
       0
     ],
     "description": "Revelation, divine message",
-    "resonance_use": "Herald glyph"
+    "resonance_use": "Herald glyph",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf2b",
+    "glyph": "🜫",
     "name": "Raphael",
     "tokens": [
       3,
@@ -705,10 +911,13 @@
       4
     ],
     "description": "Healing, restoration",
-    "resonance_use": "Mender glyph"
+    "resonance_use": "Mender glyph",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf2c",
+    "glyph": "🜬",
     "name": "Uriel",
     "tokens": [
       8,
@@ -717,10 +926,13 @@
       1
     ],
     "description": "Fire of God, enlightenment",
-    "resonance_use": "Illumination glyph"
+    "resonance_use": "Illumination glyph",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf6f",
+    "glyph": "🝯",
     "name": "Metatron",
     "tokens": [
       4,
@@ -729,10 +941,13 @@
       6
     ],
     "description": "Divine record, higher order",
-    "resonance_use": "Architect glyph"
+    "resonance_use": "Architect glyph",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   },
   {
-    "glyph": "\ud83d\udf70",
+    "glyph": "🝰",
     "name": "Sandalphon",
     "tokens": [
       2,
@@ -741,6 +956,9 @@
       9
     ],
     "description": "Praise, divine response",
-    "resonance_use": "Echo glyph"
+    "resonance_use": "Echo glyph",
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal"
   }
 ]

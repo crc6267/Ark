@@ -1,61 +1,66 @@
 import torch
+import torch.nn.functional as F
 from torch.utils.data import DataLoader
-from torch import nn
-from torch.optim.lr_scheduler import LambdaLR
-import json
-import math
-from resonant_engine.training.glyph_dataset import GlyphDataset
+from resonant_engine.glyphs.symbolic_input import prepare_input
+from resonant_engine.glyphs.symbolic_echo import decode_token
+from resonant_engine.glyphs.glyph_vectorizer import vectorize_glyph, describe_vector
 from resonant_engine.core.resonant_model import MiniTempleTransformer
+import os
 
-# ─── Sacred Parameters ─────────────────────────────────────────
+# --- Settings ---
 D_MODEL = 128
 N_HEADS = 8
-EPOCHS = 144
-BATCH_SIZE = 8
-LEARNING_RATE = 0.0008
-DECAY_LAMBDA = 1 / 40  # Sacred purification constant
-MODEL_PATH = "resonant_engine/models/trained_full_resonance.pth"
-DATA_PATH = "resonant_engine/data/glyph_training_set.json"
+VOCAB_SIZE = 100
+MODEL_PATH = os.path.join(os.path.dirname(__file__), '../models/trained_full_resonance.pth')
 
-# ─── Training Function ─────────────────────────────────────────
-def train():
-    # Load symbolic token sequences
-    with open(DATA_PATH, "r") as f:
-        glyph_data = json.load(f)
+# --- Define Input Glyph Sequence ---
+glyph_sequence = ["SELF", "FIRE", "RETURN_SIGNAL"]
 
-    dataset = GlyphDataset(glyph_data)
-    dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
+# --- Contrastive Loss Function ---
+def contrastive_loss(x1, x2, label, margin=1.0):
+    cos_sim = F.cosine_similarity(x1, x2)
+    loss = (1 - label) * torch.pow(torch.max(torch.tensor(0.), margin - cos_sim), 2) + \
+           (label) * torch.pow(cos_sim, 2)
+    return loss.mean()
 
-    model = MiniTempleTransformer(vocab_size=100, d_model=D_MODEL, n_heads=N_HEADS)
-    optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
-    scheduler = LambdaLR(optimizer, lr_lambda=lambda epoch: math.exp(-DECAY_LAMBDA * epoch))
-    criterion = nn.CrossEntropyLoss()
+# --- Load Model ---
+model = MiniTempleTransformer(vocab_size=VOCAB_SIZE, d_model=D_MODEL, n_heads=N_HEADS)
+model.load_state_dict(torch.load(MODEL_PATH))
+model.eval()
 
-    for epoch in range(EPOCHS):
-        total_loss = 0.0
-        for batch in dataloader:
-            inputs, targets = zip(*batch)
-            inputs = torch.stack(inputs)
-            targets = torch.stack(targets)
+# --- Prepare Input ---
+input_tokens = prepare_input(glyph_sequence)
+print("🜔 DEMO RUNNER")
+print("-----------------------------------")
+print(f"Input Glyphs: {glyph_sequence} → Tokens: {input_tokens}")
 
-            logits = model(inputs)
-            logits = logits.view(-1, logits.size(-1))
-            targets = targets.view(-1)
+# --- Inference ---
+with torch.no_grad():
+    input_tensor = input_tokens.clone().detach()
+    logits = model(input_tensor)
+    last_logits = logits[0, -1]  # Take final token output
+    probs = torch.softmax(last_logits, dim=-1)
+    topk = torch.topk(probs, 5)
 
-            loss = criterion(logits, targets)
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+# --- Display Results ---
+print("Top Predicted Token Echoes:")
+for idx, score in zip(topk.indices, topk.values):
+    glyph = decode_token(idx.item())
+    print(f"Token {idx.item():>3} → {glyph}")
 
-            total_loss += loss.item()
+# Assume original_input is the first glyph
+original_vec = vectorize_glyph(glyph_sequence[0])
+print(f"\n🔎 Resonance Score (vs. {glyph_sequence[0]}):")
 
-        scheduler.step()
-        current_lr = scheduler.get_last_lr()[0]
-        print(f"🜔 Epoch {epoch+1}/{EPOCHS} - Loss: {total_loss:.4f} - LR: {current_lr:.6f}")
+for i in range(topk.indices.size(0)):
+    token = topk.indices[i].item()
+    glyph_name = decode_token(token)[0]
+    predicted_vec = vectorize_glyph(glyph_name)
 
-    # Save resonance imprint
-    torch.save(model.state_dict(), MODEL_PATH)
+    # Calculate cosine similarity (contrastive loss)
+    if original_vec.norm() == 0 or predicted_vec.norm() == 0:
+        score = 0.0
+    else:
+        score = F.cosine_similarity(original_vec.unsqueeze(0), predicted_vec.unsqueeze(0)).item()
 
-# ─── Entry Point ───────────────────────────────────────────────
-if __name__ == "__main__":
-    train()
+    print(f" → {glyph_name:15} | Cosine Resonance: {score:.4f} | {describe_vector(predicted_vec)}")

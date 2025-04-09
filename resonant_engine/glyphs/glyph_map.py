@@ -3,6 +3,8 @@
 # Token sequence → Glyph name
 
 glyph_map = {
+    (4, 4, 7, 3): "RETURN_SIGNAL",
+    (2, 7, 8, 7): "SELF",
     (2, 6, 0, 4): "MERCURY",
     (4, 7, 0, 0): "SULFUR",
     (5, 9, 3, 7): "SALT",

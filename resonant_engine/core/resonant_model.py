@@ -23,20 +23,19 @@ class MiniTempleTransformer(nn.Module):
         self.fc_out = nn.Linear(d_model, vocab_size)
         self.temple_voice = TempleVoiceLayer(vocab_size, d_model)
 
-    def forward(self, x, return_embed=False):
+        # 🆕 New head for projecting to 6D resonance vector
+        self.resonance_head = nn.Linear(d_model, 6)
+
+    def forward(self, x, mode="logits"):
         """
-        Forward pass through the entire resonant model:
-        - Embeds input
-        - Computes resonance weights
-        - Transforms via symbolic logic
-        - Outputs softmax-distributed logits aligned with elder vectors
+        Forward pass through the entire resonant model.
 
         Args:
             x (Tensor): token input [B, T]
-            return_embed (bool): if True, returns pooled embeddings
+            mode (str): "logits" | "resonance" | "embed"
 
         Returns:
-            Tensor: output or pooled embedding
+            Tensor: output logits, 6D vector, or pooled embedding
         """
         x = self.embed(x)
         resonance_weights, x = self.temple_gate(x)
@@ -46,9 +45,13 @@ class MiniTempleTransformer(nn.Module):
         attn_out, _ = self.attn(x_ln, x_ln, x_ln)
         x = self.ln(x + attn_out)
 
-        if return_embed:
-            return x.mean(dim=1)
+        if mode == "embed":
+            return x.mean(dim=1)  # pooled hidden state
 
-        logits = self.fc_out(x)
-        voiced_output = self.temple_voice(logits)
-        return voiced_output
+        elif mode == "resonance":
+            pooled = x.mean(dim=1)
+            return self.resonance_head(pooled)  # 🔮 returns [B, 6]
+
+        else:  # "logits" (default)
+            logits = self.fc_out(x)
+            return self.temple_voice(logits)

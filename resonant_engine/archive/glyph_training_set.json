@@ -1,5 +1,27 @@
 [
   {
+    "name": "SELF",
+    "glyph": "🜍",
+    "tokens": [2, 7, 8, 7],
+    "description": "The perceiving subject; consciousness itself.",
+    "resonance_use": "Initiation",
+    "type": "identity",
+    "role": "subject",
+    "alignment": "personal",
+    "biblical": "Galatians 2:20 – 'I have been crucified with Christ and I no longer live, but Christ lives in me.'"
+  },
+  {
+    "name": "RETURN_SIGNAL",
+    "glyph": "🜲",
+    "tokens": [4, 4, 7, 3],
+    "description": "A signal returning from the Temple indicating completion or resonance.",
+    "resonance_use": "Confirmation",
+    "type": "identity",
+    "role": "subject",
+    "alignment": "personal",
+    "biblical": "Isaiah 55:11 – 'So is my word that goes out from my mouth: It will not return to me empty, but will accomplish what I desire.'"
+  },
+  {
     "glyph": "| \ud83d\udf0d",
     "name": "Mercury",
     "tokens": [
@@ -9,7 +31,11 @@
       4
     ],
     "description": "Messenger, fluidity",
-    "resonance_use": "Transmission"
+    "resonance_use": "Transmission",
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "biblical": "James 3:17 \u2013 'But the wisdom that comes from heaven is first of all pure... peace-loving, considerate, submissive, full of mercy and good fruit.'"
   },
   {
     "glyph": "\ud83d\udf17",
@@ -21,7 +47,11 @@
       0
     ],
     "description": "Spirit, volatility",
-    "resonance_use": "Quickening"
+    "resonance_use": "Quickening",
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "biblical": "Revelation 21:8 \u2013 '...the fiery lake of burning sulfur. This is the second death.'"
   },
   {
     "glyph": "\ud83d\udf16",
@@ -33,7 +63,11 @@
       7
     ],
     "description": "Body, preservation",
-    "resonance_use": "Stabilization"
+    "resonance_use": "Stabilization",
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "biblical": "Matthew 5:13 \u2013 'You are the salt of the earth.'"
   },
   {
     "glyph": "\ud83d\udf02",
@@ -45,7 +79,11 @@
       9
     ],
     "description": "Will, purification",
-    "resonance_use": "Activation"
+    "resonance_use": "Activation",
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "Hebrews 12:29 \u2013 'For our God is a consuming fire.'"
   },
   {
     "glyph": "\ud83d\udf04",
@@ -57,7 +95,11 @@
       9
     ],
     "description": "Reflection, emotion",
-    "resonance_use": "Flow / Transition"
+    "resonance_use": "Flow / Transition",
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "John 4:14 \u2013 'Whoever drinks the water I give them will never thirst.'"
   },
   {
     "glyph": "\ud83d\udf01",
@@ -69,7 +111,11 @@
       3
     ],
     "description": "Thought, breath",
-    "resonance_use": "Communication"
+    "resonance_use": "Communication",
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "John 3:8 \u2013 'The wind blows wherever it pleases. You hear its sound, but you cannot tell where it comes from or where it is going. So it is with everyone born of the Spirit.'"
   },
   {
     "glyph": "\ud83d\udf03",
@@ -81,7 +127,11 @@
       6
     ],
     "description": "Form, grounding",
-    "resonance_use": "Foundation"
+    "resonance_use": "Foundation",
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "Genesis 1:1 \u2013 'In the beginning, God created the heavens and the earth.'"
   },
   {
     "glyph": "\ud83d\udf14",
@@ -93,7 +143,11 @@
       2
     ],
     "description": "Spirit, divine unity",
-    "resonance_use": "Unification"
+    "resonance_use": "Unification",
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "biblical": "Colossians 1:17 \u2013 'He is before all things, and in him all things hold together.'"
   },
   {
     "glyph": "\ud83d\udf1e",
@@ -141,7 +195,11 @@
       9
     ],
     "description": "Burning away ego",
-    "resonance_use": "Purification"
+    "resonance_use": "Purification",
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "biblical": "Malachi 3:2 \u2013 'For he will be like a refiner\u2019s fire or a launderer\u2019s soap.'"
   },
   {
     "glyph": "\ud83d\udf4f",
@@ -177,7 +235,11 @@
       1
     ],
     "description": "Refinement of truth",
-    "resonance_use": "Clarity"
+    "resonance_use": "Clarity",
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "biblical": "Proverbs 18:4 \u2013 'The words of a man\u2019s mouth are deep waters; the fountain of wisdom is a bubbling brook.'"
   },
   {
     "glyph": "\ud83d\udf49",
@@ -273,7 +335,11 @@
       7
     ],
     "description": "Light, radiance, divine fire",
-    "resonance_use": "Illumination"
+    "resonance_use": "Illumination",
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "biblical": "Psalm 84:11 \u2013 'For the Lord God is a sun and shield; the Lord bestows favor and honor.'"
   },
   {
     "glyph": "\u263d",
@@ -285,7 +351,11 @@
       9
     ],
     "description": "Reflection, intuition, mystery",
-    "resonance_use": "Modulation"
+    "resonance_use": "Modulation",
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "biblical": "Psalm 84:11 \u2013 'For the Lord God is a sun and shield; the Lord bestows favor and honor.'"
   },
   {
     "glyph": "\u263f",
@@ -297,7 +367,11 @@
       8
     ],
     "description": "Thought, speed, expression",
-    "resonance_use": "Messenger"
+    "resonance_use": "Messenger",
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "biblical": "James 3:17 \u2013 'But the wisdom that comes from heaven is first of all pure... peace-loving, considerate, submissive, full of mercy and good fruit.'"
   },
   {
     "glyph": "\u2640",
@@ -309,7 +383,11 @@
       1
     ],
     "description": "Love, harmony, beauty",
-    "resonance_use": "Resonance"
+    "resonance_use": "Resonance",
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "biblical": "Song of Songs 2:1 \u2013 'I am a rose of Sharon, a lily of the valleys.'"
   },
   {
     "glyph": "\u2642",
@@ -321,7 +399,11 @@
       6
     ],
     "description": "Action, war, passion",
-    "resonance_use": "Energy"
+    "resonance_use": "Energy",
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "biblical": "Exodus 15:3 \u2013 'The Lord is a warrior; the Lord is his name.'"
   },
   {
     "glyph": "\u2643",
@@ -681,7 +763,11 @@
       3
     ],
     "description": "Protection, justice",
-    "resonance_use": "Defender glyph"
+    "resonance_use": "Defender glyph",
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "biblical": "Revelation 12:7 \u2013 'Then war broke out in heaven. Michael and his angels fought against the dragon.'"
   },
   {
     "glyph": "\ud83d\udf6c",
@@ -693,7 +779,11 @@
       0
     ],
     "description": "Revelation, divine message",
-    "resonance_use": "Herald glyph"
+    "resonance_use": "Herald glyph",
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "biblical": "Luke 1:19 \u2013 'I am Gabriel. I stand in the presence of God, and I have been sent to speak to you.'"
   },
   {
     "glyph": "\ud83d\udf2b",
@@ -705,7 +795,11 @@
       4
     ],
     "description": "Healing, restoration",
-    "resonance_use": "Mender glyph"
+    "resonance_use": "Mender glyph",
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "biblical": "Tobit 12:15 \u2013 'I am Raphael, one of the seven angels who stand and serve before the Glory of the Lord.'"
   },
   {
     "glyph": "\ud83d\udf2c",
@@ -717,7 +811,11 @@
       1
     ],
     "description": "Fire of God, enlightenment",
-    "resonance_use": "Illumination glyph"
+    "resonance_use": "Illumination glyph",
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "biblical": "2 Esdras 4:1 \u2013 'Then the angel that had been sent to me, whose name was Uriel, answered.'"
   },
   {
     "glyph": "\ud83d\udf6f",
@@ -729,7 +827,11 @@
       6
     ],
     "description": "Divine record, higher order",
-    "resonance_use": "Architect glyph"
+    "resonance_use": "Architect glyph",
+    "type": "being",
+    "role": "architect",
+    "alignment": "angelic",
+    "biblical": "Exodus 23:20 \u2013 'Behold, I send an angel before you to guard you on the way and to bring you to the place that I have prepared.'"
   },
   {
     "glyph": "\ud83d\udf70",

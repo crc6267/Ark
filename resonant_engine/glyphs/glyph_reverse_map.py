@@ -3,6 +3,8 @@
 # Glyph name → Token sequence
 
 reverse_map = {
+    "SELF": [2, 7, 8, 7],
+    "RETURN_SIGNAL": [4, 4, 7, 3],
     "MERCURY": [2, 6, 0, 4],
     "SULFUR": [4, 7, 0, 0],
     "SALT": [5, 9, 3, 7],
