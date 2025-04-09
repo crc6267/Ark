@@ -14,7 +14,7 @@ from resonant_engine.glyphs.glyph_vectorizer import vectorize_glyph
 # ─── Sacred Parameters ─────────────────────────────────────────
 D_MODEL = 128
 N_HEADS = 8
-EPOCHS = 20
+EPOCHS = 50
 BATCH_SIZE = 8
 INITIAL_LR = 1e-3
 DECAY_LAMBDA = 1 / 40
