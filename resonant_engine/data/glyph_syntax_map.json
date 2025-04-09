@@ -269,5 +269,23 @@
     "role": "emitter",
     "alignment": "spiritual",
     "biblical": "Psalm 29:4 – 'The voice of the Lord is powerful; the voice of the Lord is majestic.'"
+  },
+  "ANNOUNCEMENT": {
+    "type": "signal",
+    "role": "initiator",
+    "alignment": "prophetic",
+    "biblical": "Luke 1:19 – 'I am Gabriel. I stand in the presence of God, and I have been sent to speak to you and to tell you this good news.'"
+  },
+  "PROTECTION": {
+    "type": "force",
+    "role": "defender",
+    "alignment": "angelic",
+    "biblical": "Daniel 12:1 – 'At that time Michael, the great prince who protects your people, will arise.'"
+  },
+  "HEALING": {
+    "type": "force",
+    "role": "restorer",
+    "alignment": "angelic",
+    "biblical": "Tobit 12:15 (Apocrypha) – 'I am Raphael, one of the seven angels who stand and serve before the Glory of the Lord.'"
   }
 }

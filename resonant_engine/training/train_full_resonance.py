@@ -15,7 +15,7 @@ BATCH_SIZE = 8
 LEARNING_RATE = 0.0008
 DECAY_LAMBDA = 1 / 40  # Sacred purification constant
 MODEL_PATH = "resonant_engine/models/trained_full_resonance.pth"
-DATA_PATH = "resonant_engine/data/slyph_training_set.json"
+DATA_PATH = "resonant_engine/data/glyph_training_set.json"
 
 # ─── Training Function ─────────────────────────────────────────
 def train():

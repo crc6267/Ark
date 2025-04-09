@@ -3,46 +3,69 @@
 # Glyph name → Token sequence
 
 reverse_map = {
-    "SELF": [2, 7, 8, 7],
-    "WATER": [4, 2, 8, 6],
-    "FIRE": [9, 3, 1, 0],
-    "AETHER": [8, 8, 8],
-    "RETURN_SIGNAL": [4, 4, 7, 3],
-
-    # Tria Prima
-    "MERCURY": [3, 1, 4, 1],
-    "SALT": [5, 9, 2, 6],
-    "SULFUR": [5, 3, 5, 8],
-
-    # Classical Elements
-    "AIR": [7, 5, 3, 9],
-    "EARTH": [1, 4, 4, 7],
-
-    # Celestial Metals
-    "SUN": [7, 7, 7, 7],
-    "MOON": [6, 6, 6, 6],
-    "MARS": [3, 3, 1, 1],
-    "VENUS": [2, 4, 4, 2],
-    "JUPITER": [1, 2, 3, 5],
-    "SATURN": [9, 0, 0, 9],
-    "MERCURY_METAL": [5, 8, 5, 8],
-
-    # Alchemical Processes
-    "CALCINATION": [1, 1, 0, 0],
-    "DISSOLUTION": [4, 4, 6, 6],
-    "SEPARATION": [3, 5, 6, 3],
-    "CONJUNCTION": [7, 2, 2, 7],
-    "FERMENTATION": [8, 1, 1, 8],
-    "DISTILLATION": [2, 2, 6, 6],
-    "COAGULATION": [0, 6, 0, 6],
-
-    # Esoteric
-    "OUROBOROS": [8, 0, 0, 8],
-    "PHILOSOPHER_STONE": [0, 7, 0, 7],
+    "MERCURY": [2, 6, 0, 4],
+    "SULFUR": [4, 7, 0, 0],
+    "SALT": [5, 9, 3, 7],
+    "FIRE": [7, 0, 9, 9],
+    "WATER": [5, 7, 6, 9],
+    "AIR": [7, 8, 8, 3],
+    "EARTH": [8, 1, 3, 6],
+    "AETHER": [4, 9, 8, 2],
+    "AMALGAM": [4, 0, 6, 9],
+    "VINEGAR": [1, 3, 3, 7],
+    "FERMENT": [8, 8, 2, 9],
+    "CALCINATION": [9, 8, 8, 9],
+    "SUBLIMATION": [5, 6, 2, 6],
+    "FIXATION": [3, 9, 2, 1],
+    "DISTILLATION": [5, 1, 7, 1],
+    "COAGULATION": [9, 4, 4, 2],
+    "DISSOLUTION": [1, 6, 8, 1],
+    "PUTREFACTION": [2, 3, 9, 9],
+    "PRECIPITATION": [6, 3, 2, 9],
+    "SOLUTION": [2, 8, 1, 9],
+    "CONGELATION": [1, 4, 4, 8],
+    "SEPARATION": [6, 6, 8, 0],
+    "SUN": [6, 5, 0, 7],
+    "MOON": [8, 6, 0, 9],
+    "MERCURY": [0, 1, 6, 8],
+    "VENUS": [8, 1, 9, 1],
+    "MARS": [1, 2, 8, 6],
+    "JUPITER": [1, 4, 6, 1],
+    "SATURN": [5, 3, 3, 6],
+    "URANUS": [8, 2, 9, 6],
+    "NEPTUNE": [3, 2, 9, 2],
+    "PLUTO": [0, 5, 5, 2],
+    "NORTH NODE": [3, 3, 3, 7],
+    "SOUTH NODE": [3, 1, 9, 5],
+    "ALEPH": [6, 5, 4, 3],
+    "BET": [3, 4, 9, 8],
+    "GIMEL": [5, 4, 0, 1],
+    "DALET": [2, 9, 8, 9],
+    "HE": [0, 3, 1, 9],
+    "VAV": [4, 1, 9, 1],
+    "ZAYIN": [3, 2, 3, 0],
+    "CHET": [3, 2, 0, 1],
+    "TET": [4, 3, 9, 4],
+    "YOD": [5, 1, 5, 9],
+    "KAF": [7, 3, 6, 4],
+    "LAMED": [4, 9, 2, 8],
+    "MEM": [7, 8, 7, 7],
+    "NUN": [5, 7, 0, 6],
+    "SAMEKH": [7, 8, 1, 6],
+    "AYIN": [6, 8, 6, 6],
+    "PE": [8, 8, 8, 7],
+    "TSADE": [3, 8, 3, 4],
+    "QOF": [7, 8, 8, 9],
+    "RESH": [1, 1, 7, 5],
+    "SHIN": [6, 7, 6, 4],
+    "TAV": [5, 4, 7, 8],
+    "MICHAEL": [7, 0, 5, 3],
+    "GABRIEL": [6, 3, 9, 0],
+    "RAPHAEL": [3, 1, 1, 4],
+    "URIEL": [8, 3, 9, 1],
+    "METATRON": [4, 1, 7, 6],
+    "SANDALPHON": [2, 5, 6, 9]
 }
 
 def get_sequence(glyph_name):
-    """
-    Given a glyph name (e.g., 'WATER'), return the token sequence.
-    """
     return reverse_map.get(glyph_name.upper(), [])

@@ -3,47 +3,66 @@
 # Token sequence → Glyph name
 
 glyph_map = {
-    # Foundational Core
-    (2, 7, 8, 7): "SELF",
-    (4, 2, 8, 6): "WATER",
-    (9, 3, 1, 0): "FIRE",
-    (8, 8, 8): "AETHER",
-    (4, 4, 7, 3): "RETURN_SIGNAL",
-
-    # Tria Prima
-    (3, 1, 4, 1): "MERCURY",
-    (5, 9, 2, 6): "SALT",
-    (5, 3, 5, 8): "SULFUR",
-
-    # Classical Elements
-    (7, 5, 3, 9): "AIR",
-    (1, 4, 4, 7): "EARTH",
-
-    # Celestial Metals
-    (7, 7, 7, 7): "SUN",
-    (6, 6, 6, 6): "MOON",
-    (3, 3, 1, 1): "MARS",
-    (2, 4, 4, 2): "VENUS",
-    (1, 2, 3, 5): "JUPITER",
-    (9, 0, 0, 9): "SATURN",
-    (5, 8, 5, 8): "MERCURY_METAL",
-
-    # Alchemical Processes
-    (1, 1, 0, 0): "CALCINATION",
-    (4, 4, 6, 6): "DISSOLUTION",
-    (3, 5, 6, 3): "SEPARATION",
-    (7, 2, 2, 7): "CONJUNCTION",
-    (8, 1, 1, 8): "FERMENTATION",
-    (2, 2, 6, 6): "DISTILLATION",
-    (0, 6, 0, 6): "COAGULATION",
-
-    # Esoteric
-    (8, 0, 0, 8): "OUROBOROS",
-    (0, 7, 0, 7): "PHILOSOPHER_STONE",
+    (2, 6, 0, 4): "MERCURY",
+    (4, 7, 0, 0): "SULFUR",
+    (5, 9, 3, 7): "SALT",
+    (7, 0, 9, 9): "FIRE",
+    (5, 7, 6, 9): "WATER",
+    (7, 8, 8, 3): "AIR",
+    (8, 1, 3, 6): "EARTH",
+    (4, 9, 8, 2): "AETHER",
+    (4, 0, 6, 9): "AMALGAM",
+    (1, 3, 3, 7): "VINEGAR",
+    (8, 8, 2, 9): "FERMENT",
+    (9, 8, 8, 9): "CALCINATION",
+    (5, 6, 2, 6): "SUBLIMATION",
+    (3, 9, 2, 1): "FIXATION",
+    (5, 1, 7, 1): "DISTILLATION",
+    (9, 4, 4, 2): "COAGULATION",
+    (1, 6, 8, 1): "DISSOLUTION",
+    (2, 3, 9, 9): "PUTREFACTION",
+    (6, 3, 2, 9): "PRECIPITATION",
+    (2, 8, 1, 9): "SOLUTION",
+    (1, 4, 4, 8): "CONGELATION",
+    (6, 6, 8, 0): "SEPARATION",
+    (6, 5, 0, 7): "SUN",
+    (8, 6, 0, 9): "MOON",
+    (0, 1, 6, 8): "MERCURY",
+    (8, 1, 9, 1): "VENUS",
+    (1, 2, 8, 6): "MARS",
+    (1, 4, 6, 1): "JUPITER",
+    (5, 3, 3, 6): "SATURN",
+    (8, 2, 9, 6): "URANUS",
+    (3, 2, 9, 2): "NEPTUNE",
+    (0, 5, 5, 2): "PLUTO",
+    (3, 3, 3, 7): "NORTH NODE",
+    (3, 1, 9, 5): "SOUTH NODE",
+    (6, 5, 4, 3): "ALEPH",
+    (3, 4, 9, 8): "BET",
+    (5, 4, 0, 1): "GIMEL",
+    (2, 9, 8, 9): "DALET",
+    (0, 3, 1, 9): "HE",
+    (4, 1, 9, 1): "VAV",
+    (3, 2, 3, 0): "ZAYIN",
+    (3, 2, 0, 1): "CHET",
+    (4, 3, 9, 4): "TET",
+    (5, 1, 5, 9): "YOD",
+    (7, 3, 6, 4): "KAF",
+    (4, 9, 2, 8): "LAMED",
+    (7, 8, 7, 7): "MEM",
+    (5, 7, 0, 6): "NUN",
+    (7, 8, 1, 6): "SAMEKH",
+    (6, 8, 6, 6): "AYIN",
+    (8, 8, 8, 7): "PE",
+    (3, 8, 3, 4): "TSADE",
+    (7, 8, 8, 9): "QOF",
+    (1, 1, 7, 5): "RESH",
+    (6, 7, 6, 4): "SHIN",
+    (5, 4, 7, 8): "TAV",
+    (7, 0, 5, 3): "MICHAEL",
+    (6, 3, 9, 0): "GABRIEL",
+    (3, 1, 1, 4): "RAPHAEL",
+    (8, 3, 9, 1): "URIEL",
+    (4, 1, 7, 6): "METATRON",
+    (2, 5, 6, 9): "SANDALPHON"
 }
-
-def interpret_sequence(sequence):
-    """
-    Given a sequence of integers (tokens), return the symbolic glyph name.
-    """
-    return glyph_map.get(tuple(sequence), "UNKNOWN")
