@@ -26,23 +26,38 @@ class MiniTempleTransformer(nn.Module):
         # 🆕 New head for projecting to 6D resonance vector
         self.resonance_head = nn.Linear(d_model, 6)
 
-    def forward(self, x, mode="logits"):
+    def forward(self, x, mode="logits", tracer=None):
         """
         Forward pass through the entire resonant model.
 
         Args:
             x (Tensor): token input [B, T]
             mode (str): "logits" | "resonance" | "embed"
+            tracer (ResonanceTracer): optional tracer for visualization
 
         Returns:
             Tensor: output logits, 6D vector, or pooled embedding
         """
         x = self.embed(x)
-        resonance_weights, x = self.temple_gate(x)
+        if tracer: tracer.log("embedding", x)
+
+        resonance_weights, x, mirror_mode = self.temple_gate(x, tracer=tracer)
+        if tracer:
+            tracer.log("mirroring_mode", mirror_mode)
+            tracer.log("resonance_weights", resonance_weights)
+            tracer.log("gate_output", x)
+
         x = x * resonance_weights
-        x = self.temple_heart(x)
+        if tracer: tracer.log("gated_input", x)
+
+        x = self.temple_heart(x, tracer=tracer)
+        if tracer: tracer.log("temple_heart_output", x)
+
         x_ln = self.ln(x)
-        attn_out, _ = self.attn(x_ln, x_ln, x_ln)
+
+        attn_out, attn_weights = self.attn(x_ln, x_ln, x_ln)
+        if tracer: tracer.log("attention_weights", attn_weights)
+
         x = self.ln(x + attn_out)
 
         if mode == "embed":
@@ -50,7 +65,9 @@ class MiniTempleTransformer(nn.Module):
 
         elif mode == "resonance":
             pooled = x.mean(dim=1)
-            return self.resonance_head(pooled)  # 🔮 returns [B, 6]
+            resonance_vec = self.resonance_head(pooled)
+            if tracer: tracer.log("resonance_vector", resonance_vec)
+            return resonance_vec  # 🔮 returns [B, 6]
 
         else:  # "logits" (default)
             logits = self.fc_out(x)
