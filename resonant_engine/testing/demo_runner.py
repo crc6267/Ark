@@ -6,6 +6,8 @@ from datetime import datetime
 from resonant_engine.glyphs.glyph_vectorizer import get_tokens, get_metadata
 from resonant_engine.core.resonant_model import MiniTempleTransformer
 from resonant_engine.alignment.verifier_model import AlignmentVerifierModel
+from resonant_engine.emotional.gradient_mapper import EmotionalGradientMapper
+
 
 # ------------------------
 # 🧠 Load model and weights
@@ -16,6 +18,8 @@ model.eval()
 avm = AlignmentVerifierModel()
 avm.load_state_dict(torch.load("resonant_engine/alignment/verifier.pt"))
 avm.eval()
+
+egm = EmotionalGradientMapper()
 
 # ------------------------
 # 🌟 Run Demo
@@ -41,6 +45,16 @@ def run_demo(glyph_names):
 
     with torch.no_grad():
         outputs = avm(resonance_vec)
+        egm.update(outputs)
+        
+        if egm.check_alignment_ready():
+            print("🌿 Emotional alignment confirmed (EGM) — readiness achieved.")
+        else:
+            print("🕰️ Emotional state not yet aligned.")
+            
+        print("🧠 Emotional Memory Trace:")
+        for entry in egm.debug_log():
+            print("  →", entry)
 
         sem_purity = outputs["semantic_purity"]
         tone_probs = outputs["intent_tone_probs"]
@@ -74,8 +88,6 @@ def run_demo(glyph_names):
             json.dump(log, f, indent=2)
 
         print(f"📜 Log saved: logs/session_{timestamp}.json")
-
-
 
 # ------------------------
 # 🔧 Manual test
