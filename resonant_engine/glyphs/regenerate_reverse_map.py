@@ -1,7 +1,7 @@
 # regenerate_reverse_map.py
 
 import json
-from resonant_engine.glyphs.glyph_map import glyph_map
+from resonant_engine.archive.glyph_map import glyph_map
 
 reverse_map = {str(list(seq)): glyph for seq, glyph in glyph_map.items()}
 

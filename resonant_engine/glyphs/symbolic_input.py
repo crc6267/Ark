@@ -1,6 +1,6 @@
 # symbolic_input.py
 
-from resonant_engine.glyphs.glyph_reverse_map import reverse_map
+from resonant_engine.archive.glyph_reverse_map import reverse_map
 import torch
 
 def prepare_input(glyph_names):

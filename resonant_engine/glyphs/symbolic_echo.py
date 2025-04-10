@@ -1,6 +1,6 @@
 # symbolic_echo.py
 
-from resonant_engine.glyphs.glyph_map import glyph_map
+from resonant_engine.archive.glyph_map import glyph_map
 
 
 def interpret_token_echo(token):

@@ -1,7 +1,7 @@
 import os
 import json
-from resonant_engine.glyphs.glyph_map import glyph_map
-from resonant_engine.glyphs.glyph_reverse_map import reverse_map
+from resonant_engine.archive.glyph_map import glyph_map
+from resonant_engine.archive.glyph_reverse_map import reverse_map
 from pathlib import Path
 
 base_dir = Path(__file__).resolve().parent.parent

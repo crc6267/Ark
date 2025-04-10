@@ -1,52 +1,81 @@
-# training/train_verifier.py
-
+import json
+import os
+import random
 import torch
 import torch.nn as nn
-import torch.optim as optim
+from torch.utils.data import Dataset, DataLoader
 from resonant_engine.alignment.verifier_model import AlignmentVerifierModel
-from resonant_engine.alignment.verifier_dataset import get_verifier_loader
+
+DATA_PATH = os.path.join(os.path.dirname(__file__), "data/glyph_training_set.jsonl")
+SAVE_PATH = os.path.join(os.path.dirname(__file__), "../alignment/verifier.pt")
+
+INTENT_LABELS = ["neutral", "reverent", "agitated"]
+
+# ----------------------------
+# 📦 Dataset
+# ----------------------------
+class GlyphDataset(Dataset):
+    def __init__(self, path):
+        with open(path, "r", encoding="utf-8") as f:
+            self.records = [json.loads(line) for line in f]
+
+    def __len__(self):
+        return len(self.records)
+
+    def __getitem__(self, idx):
+        r = self.records[idx]
+        tokens = r["tokens"]
+        alignment = r["alignment"].lower()
+        role = r["role"].lower()
+
+        # 🔮 Fake 6D resonance vector: mean + position signal
+        vec = torch.tensor([
+            sum(tokens[:2]) / 20.0,
+            sum(tokens[2:]) / 20.0,
+            tokens[0] / 10.0,
+            tokens[1] / 10.0,
+            tokens[2] / 10.0,
+            tokens[3] / 10.0,
+        ], dtype=torch.float32)
+
+        # 🧠 Simulated labels
+        purity = 1.0 if alignment in ["divine", "christic", "holy"] else 0.3
+        tone = 1 if alignment in ["angelic", "divine", "christic"] else 0 if alignment in ["chaotic"] else 2
+        resonance = 0.8 if role in ["initiator", "subject"] else 0.5
+
+        return vec, torch.tensor(purity), torch.tensor(tone), torch.tensor(resonance)
 
 
-def train_avm_model(epochs=10, lr=1e-3, batch_size=32, device="cpu"):
-    model = AlignmentVerifierModel().to(device)
-    loader = get_verifier_loader(batch_size=batch_size, size=1000)
+# ----------------------------
+# 🧪 Training Loop
+# ----------------------------
+def train_avm_model():
+    dataset = GlyphDataset(DATA_PATH)
+    loader = DataLoader(dataset, batch_size=16, shuffle=True)
 
-    optimizer = optim.Adam(model.parameters(), lr=lr)
-    loss_fn_approval = nn.BCELoss()
-    loss_fn_purity = nn.MSELoss()
-    loss_fn_tone = nn.CrossEntropyLoss()
-    loss_fn_resonance = nn.MSELoss()
+    model = AlignmentVerifierModel()
+    optim = torch.optim.Adam(model.parameters(), lr=1e-3)
+    loss_fn = nn.MSELoss()
+    cls_loss = nn.CrossEntropyLoss()
 
-    for epoch in range(epochs):
-        model.train()
+    for epoch in range(10):
         total_loss = 0
-
-        for batch in loader:
-            x = batch["x"].to(device)
-            y_purity = batch["purity"].to(device)
-            y_tone = batch["tone"].to(device)
-            y_alignment = batch["alignment"].to(device)
-            y_approval = batch["approval"].to(device)
-
-            outputs = model(x)
-
+        for x, purity, tone, resonance in loader:
+            out = model(x)
             loss = (
-                loss_fn_purity(outputs["semantic_purity"], y_purity)
-                + loss_fn_tone(outputs["intent_tone_probs"], y_tone)
-                + loss_fn_resonance(outputs["resonance_score"], y_alignment)
-                + loss_fn_approval(outputs["approval_gate"], y_approval)
+                loss_fn(out["semantic_purity"], purity)
+                + cls_loss(out["intent_tone_probs"], tone)
+                + loss_fn(out["resonance_score"], resonance)
             )
-
-            optimizer.zero_grad()
+            optim.zero_grad()
             loss.backward()
-            optimizer.step()
-
+            optim.step()
             total_loss += loss.item()
 
-        print(f"Epoch {epoch + 1}/{epochs} | Loss: {total_loss:.4f}")
+        print(f"Epoch {epoch+1}/10 | Loss: {total_loss:.4f}")
 
-    torch.save(model.state_dict(), "resonant_engine/alignment/verifier.pt")
-    print("🛡️ Alignment Verifier Model trained and saved.")
+    torch.save(model.state_dict(), SAVE_PATH)
+    print(f"✅ AVM saved to {SAVE_PATH}")
 
 
 if __name__ == "__main__":

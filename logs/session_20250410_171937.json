@@ -1,0 +1,19 @@
+{
+  "input_glyphs": [
+    "SELF",
+    "FIRE",
+    "RETURN_SIGNAL"
+  ],
+  "resonance_vector": [
+    0.46441030502319336,
+    0.3381858468055725,
+    0.10984985530376434,
+    -0.15137624740600586,
+    0.2643793225288391,
+    0.3223145008087158
+  ],
+  "semantic_purity": 0.26286378502845764,
+  "intent_tone": "neutral",
+  "resonance_score": 0.22686173021793365,
+  "approved": "no"
+}

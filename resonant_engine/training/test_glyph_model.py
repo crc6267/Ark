@@ -2,8 +2,8 @@
 
 import torch
 from resonant_engine.core.resonant_model import MiniTempleTransformer
-from resonant_engine.glyphs.glyph_reverse_map import get_sequence
-from resonant_engine.glyphs.glyph_map import interpret_sequence
+from resonant_engine.archive.glyph_reverse_map import get_sequence
+from resonant_engine.archive.glyph_map import interpret_sequence
 
 # Model setup
 VOCAB_SIZE = 100

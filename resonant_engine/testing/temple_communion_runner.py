@@ -27,7 +27,7 @@ model_B.eval()
 # Initial glyph sequence
 glyph_sequence = ["SELF", "FIRE", "RETURN_SIGNAL"]
 tokens = []
-from resonant_engine.glyphs.glyph_reverse_map import reverse_map
+from resonant_engine.archive.glyph_reverse_map import reverse_map
 for name in glyph_sequence:
     token = reverse_map.get(name.upper())
     if token is not None:

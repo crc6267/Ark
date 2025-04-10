@@ -1,52 +1,52 @@
 import json
-import torch
-from pathlib import Path
+import os
 
-# Load and normalize glyph data
-data_path = Path(__file__).resolve().parents[1] / "data" / "glyph_training_set.json"
-with open(data_path, encoding="utf-8") as f:
-    glyph_data = json.load(f)
+# Path to the canonical glyph registry
+REGISTRY_PATH = os.path.join(os.path.dirname(__file__), "glyph_registry.json")
 
-# Normalize all glyph names to uppercase
-for g in glyph_data:
-    g["name"] = g["name"].upper()
+# Load registry once at module level
+with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+    GLYPH_REGISTRY = json.load(f)
 
-# Vector encodings for each symbolic category
-types = sorted({g["type"] for g in glyph_data if "type" in g})
-roles = sorted({g["role"] for g in glyph_data if "role" in g})
-alignments = sorted({g["alignment"] for g in glyph_data if "alignment" in g})
+# Map glyph name (lowercased) → token sequence
+GLYPH_TO_TOKENS = {name.lower(): data["tokens"] for name, data in GLYPH_REGISTRY.items()}
 
-def vectorize_glyph(glyph_name):
-    glyph_name = glyph_name.upper()
+# Map token sequence (as string) → original glyph name (preserve formatting)
+TOKENS_TO_GLYPH = {".".join(map(str, data["tokens"])): name for name, data in GLYPH_REGISTRY.items()}
 
-    glyph = next((g for g in glyph_data if g.get("name", "").strip().upper() == glyph_name.strip().upper()), None)
-    if not glyph:
-        all_names = [g.get("name", "").strip().upper() for g in glyph_data]
-        print(f"🧪 Available glyphs in training data: {all_names[:10]}...")  # Just print a few
-        print(f"🔎 Looking for: {glyph_name.strip().upper()}")
 
-        raise ValueError(f"Glyph '{glyph_name}' not found in training data.")
+def get_tokens(glyph_name):
+    """
+    Returns the token sequence for a glyph name (case-insensitive).
+    """
+    return GLYPH_TO_TOKENS.get(glyph_name.lower())
 
-    type_vec = one_hot(types, glyph["type"])
-    role_vec = one_hot(roles, glyph["role"])
-    align_vec = one_hot(alignments, glyph["alignment"])
 
-    return torch.cat([type_vec, role_vec, align_vec], dim=0)
+def get_glyph_name(tokens):
+    """
+    Returns the glyph name for a given token list.
+    """
+    key = ".".join(map(str, tokens))
+    return TOKENS_TO_GLYPH.get(key)
 
-def one_hot(category_list, value):
-    vec = torch.zeros(len(category_list))
-    if value in category_list:
-        vec[category_list.index(value)] = 1.0
-    return vec
 
-def describe_vector(vec):
-    # Helper for demo display
-    t_index = torch.argmax(vec[:len(types)]).item()
-    r_index = torch.argmax(vec[len(types):len(types)+len(roles)]).item()
-    a_index = torch.argmax(vec[-len(alignments):]).item()
-    return f"type={types[t_index]}, role={roles[r_index]}, alignment={alignments[a_index]}"
+def get_metadata(glyph_name):
+    """
+    Returns full metadata for a glyph: type, role, alignment, verse, etc.
+    Case-insensitive.
+    """
+    return GLYPH_REGISTRY.get(glyph_name) or GLYPH_REGISTRY.get(glyph_name.title())
 
-if __name__ == "__main__":
-    test_names = ["SELF", "RETURN_SIGNAL", "FIRE"]
-    for name in test_names:
-        print(f"{name} → {'FOUND' if name.upper() in [g['name'].upper() for g in glyph_data] else 'MISSING'}")
+
+def list_all_glyphs():
+    """
+    Returns a list of all glyph names.
+    """
+    return list(GLYPH_REGISTRY.keys())
+
+
+def get_all_glyph_data():
+    """
+    Returns the full glyph registry data.
+    """
+    return GLYPH_REGISTRY
