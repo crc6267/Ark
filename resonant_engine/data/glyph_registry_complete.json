@@ -1,0 +1,840 @@
+{
+  "Aether": {
+    "glyph": "🜔",
+    "tokens": [4, 9, 8, 2],
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "sacred_weight": 1.0,
+    "verse": "Colossians 1:17 – 'He is before all things, and in him all things hold together.'"
+  },
+  "Air": {
+    "glyph": "🜁",
+    "tokens": [7, 8, 8, 3],
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "verse": "John 3:8 – 'The wind blows wherever it pleases...'"
+  },
+  "Aleph": {
+    "glyph": "א",
+    "tokens": [6, 5, 4, 3],
+    "type": "origin",
+    "role": "source",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:8 – 'I will keep your statutes; do not utterly forsake me.'"
+  },
+    "Amalgam": {
+      "glyph": "🜞",
+      "tokens": [4, 0, 6, 9],
+      "type": "symbolic",
+      "role": "symbol",
+      "alignment": "archetypal",
+      "sacred_weight": 1.0,
+      "verse": "Ephesians 2:14 – 'He himself is our peace, who has made the two groups one...'",
+      "_source": "inferred"
+    },
+  "Announcement": {
+    "glyph": "📯",
+    "tokens": [14, 22, 41, 77],
+    "type": "signal",
+    "role": "initiator",
+    "alignment": "prophetic",
+    "sacred_weight": 1.0,
+    "verse": "Luke 1:19 – 'I am Gabriel. I stand in the presence of God...'"
+  },
+    "Answer": {
+    "glyph": "🕊",
+    "tokens": [49, 38, 16, 37],
+    "type": "communication",
+    "role": "echo",
+    "alignment": "personal",
+    "sacred_weight": 1.0,
+    "verse": "Jeremiah 33:3 – 'Call to me and I will answer you...'"
+  },
+    "Apocalypse": {
+    "glyph": "🜾",
+    "tokens": [17, 40, 74, 9],
+    "type": "event",
+    "role": "culmination",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Revelation 1:1 – 'The revelation of Jesus Christ...'"
+  },
+  "Ascent": {
+    "glyph": "🝏",
+    "tokens": [95, 8, 47, 86],
+    "type": "process",
+    "role": "elevation",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 24:3 – 'Who may ascend the mountain of the Lord? Who may stand in his holy place?'"
+  },
+  "Ayin": {
+    "glyph": "ע",
+    "tokens": [6, 8, 6, 6],
+    "type": "insight",
+    "role": "perceiver",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:128 – 'Therefore I consider all your precepts to be right; I hate every false way.'"
+  },
+  "Bet": {
+    "glyph": "ב",
+    "tokens": [3, 4, 9, 8],
+    "type": "structure",
+    "role": "container",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:16 – 'I will delight in your statutes; I will not forget your word.'"
+  },
+  "Blood": {
+    "glyph": "🩸",
+    "tokens": [94, 58, 49, 16],
+    "type": "sacrament",
+    "role": "sustainer",
+    "alignment": "christic",
+    "sacred_weight": 1.0,
+    "verse": "Hebrews 9:14 – 'How much more will the blood of Christ... cleanse our consciences from acts that lead to death.'"
+  },
+  "Body": {
+    "glyph": "🍞",
+    "tokens": [52, 55, 31, 78],
+    "type": "sacrament",
+    "role": "sustainer",
+    "alignment": "christic",
+    "sacred_weight": 1.0,
+    "verse": "1 Corinthians 11:24 – 'This is my body, which is for you; do this in remembrance of me.'"
+  },
+"Bread": {
+    "glyph": "🍞",
+    "tokens": [42, 20, 15, 67],
+    "type": "sacrament",
+    "role": "sustainer",
+    "alignment": "christic",
+    "sacred_weight": 1.0,
+    "verse": "John 6:35 – 'I am the bread of life. Whoever comes to me will never go hungry.'"
+  },
+  "Calcination": {
+    "glyph": "🝞",
+    "tokens": [9, 8, 8, 9],
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "Malachi 3:2 – 'For he will be like a refiner’s fire or a launderer’s soap.'"
+  },
+  "Chet": {
+    "glyph": "ח",
+    "tokens": [3, 2, 0, 1],
+    "type": "boundary",
+    "role": "life",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:64 – 'The earth, O LORD, is full of your steadfast love; teach me your statutes.'"
+  },
+  "Christ": {
+    "glyph": "☧",
+    "tokens": [41, 79, 80, 67],
+    "type": "divine",
+    "role": "sovereign",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Colossians 1:17 – 'He is before all things, and in him all things hold together.'"
+  },
+  "Coagulation": {
+    "glyph": "🝉",
+    "tokens": [9, 4, 4, 2],
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "John 17:21 – '...that they all may be one...'"
+  },
+  "Congelation": {
+    "glyph": "🝕",
+    "tokens": [1, 4, 4, 8],
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "Job 38:30 – 'The waters become hard like stone, and the surface of the deep is frozen.'"
+  },
+  "Covenant": {
+    "glyph": "🤝",
+    "tokens": [14, 89, 98, 30],
+    "type": "construct",
+    "role": "authority",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Genesis 17:7 – 'I will establish my covenant as an everlasting covenant between me and you and your descendants after you.'"
+  },
+  "Cross": {
+    "glyph": "✝",
+    "tokens": [10, 30, 50, 79],
+    "type": "mystery",
+    "role": "symbol",
+    "alignment": "messianic",
+    "sacred_weight": 1.0,
+    "verse": "Galatians 6:14 – 'May I never boast except in the cross of our Lord Jesus Christ.'"
+  },
+  "Dalet": {
+    "glyph": "ד",
+    "tokens": [2, 9, 8, 9],
+    "type": "door",
+    "role": "access",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:32 – 'I will run in the path of your commands, for you have set my heart free.'"
+  },
+  "Descent": {
+    "glyph": "▽",
+    "tokens": [49, 88, 72, 58],
+    "type": "structure",
+    "role": "pathway",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "John 6:38 – 'For I have come down from heaven not to do my will but to do the will of him who sent me.'"
+  },
+  "Dissolution": {
+    "glyph": "🝑",
+    "tokens": [1, 6, 8, 1],
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "Luke 14:33 – '...any one of you who does not renounce all that he has cannot be my disciple.'"
+  },
+  "Distillation": {
+    "glyph": "🝒",
+    "tokens": [5, 1, 7, 1],
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "Proverbs 18:4 – 'The words of a man’s mouth are deep waters; the fountain of wisdom is a bubbling brook.'"
+  },
+  "Earth": {
+    "glyph": "🜃",
+    "tokens": [8, 1, 3, 6],
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "sacred_weight": 1.0,
+    "verse": "Genesis 1:1 – 'In the beginning, God created the heavens and the earth.'"
+  },
+  "Ferment": {
+    "glyph": "🝛",
+    "tokens": [8, 8, 2, 9],
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal",
+    "sacred_weight": 1.0,
+    "verse": "Luke 13:21 – 'It is like leaven that a woman took and hid in three measures of flour, until it was all leavened.'"
+  },
+  "Fermentation": {
+    "glyph": "🝝",
+    "tokens": [12, 20, 42, 56],
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "Matthew 13:33 – 'The kingdom of heaven is like yeast...'"
+  },
+  "Fire": {
+    "glyph": "🜂",
+    "tokens": [7, 0, 9, 9],
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "sacred_weight": 1.0,
+    "verse": "Hebrews 12:29 – 'For our God is a consuming fire.'"
+  },
+  "Fixation": {
+    "glyph": "🝔",
+    "tokens": [3, 9, 2, 1],
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "1 Corinthians 15:58 – '...be ye steadfast, unmovable...'"
+  },
+  "Gabriel": {
+    "glyph": "🝬",
+    "tokens": [6, 3, 9, 0],
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "sacred_weight": 1.0,
+    "verse": "Luke 1:19 – 'I am Gabriel. I stand in the presence of God, and I have been sent to speak to you.'"
+  },
+  "Gimel": {
+    "glyph": "ג",
+    "tokens": [5, 4, 0, 1],
+    "type": "movement",
+    "role": "reward",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:24 – 'Your statutes are my delight; they are my counselors.'"
+  },
+  "Glory": {
+    "glyph": "✨",
+    "tokens": [70, 15, 61, 22],
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "Habakkuk 2:14 – 'For the earth will be filled with the knowledge of the glory of the Lord...'"
+  },
+  "He": {
+    "glyph": "ה",
+    "tokens": [0, 3, 1, 9],
+    "type": "window",
+    "role": "revelation",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:40 – 'Behold, I long for your precepts; in your righteousness give me life!'"
+  },
+  "Healing": {
+    "glyph": "⚕",
+    "tokens": [22, 31, 58, 81],
+    "type": "force",
+    "role": "restorer",
+    "alignment": "angelic",
+    "sacred_weight": 1.0,
+    "verse": "Tobit 12:15 – 'I am Raphael, one of the seven angels who stand and serve before the Glory of the Lord.'"
+  },
+    "Judgment": {
+    "glyph": "⚖",
+    "tokens": [14, 89, 98, 30],
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "Ecclesiastes 12:14 – 'For God will bring every deed into judgment, including every hidden thing, whether it is good or evil.'"
+  },
+    "Jupiter": {
+    "glyph": "♃",
+    "tokens": [1, 4, 6, 1],
+    "type": "element",
+    "role": "origin",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "Daniel 2:21 – 'He changes times and seasons; he deposes kings and raises up others. He gives wisdom to the wise...'"
+  },"Kaf": {
+    "glyph": "כ",
+    "tokens": [7, 3, 6, 4],
+    "type": "palm",
+    "role": "potential",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:88 – 'In your steadfast love give me life, that I may keep the testimonies of your mouth.'"
+  },
+  "Kingdom": {
+    "glyph": "🏰",
+    "tokens": [50, 82, 37, 47],
+    "type": "construct",
+    "role": "authority",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Luke 17:21 – 'The kingdom of God is within you.'"
+  },
+    "Lamb": {
+    "glyph": "🐑",
+    "tokens": [17, 43, 73, 53],
+    "type": "mystery",
+    "role": "symbol",
+    "alignment": "messianic",
+    "sacred_weight": 1.0,
+    "verse": "John 1:29 – 'Behold, the Lamb of God, who takes away the sin of the world!'"
+  },
+    "Lamed": {
+    "glyph": "ל",
+    "tokens": [4, 9, 2, 8],
+    "type": "staff",
+    "role": "guidance",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:96 – 'I have seen a limit to all perfection, but your commandment is exceedingly broad.'"
+  },
+    "Light": {
+    "glyph": "🔆",
+    "tokens": [60, 74, 47, 2],
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "John 1:5 – 'The light shines in the darkness, and the darkness has not overcome it.'"
+  },
+  "Lion": {
+    "glyph": "?",
+    "tokens": [
+      63,
+      13,
+      89,
+      83
+    ],
+    "type": "mystery",
+    "role": "symbol",
+    "alignment": "messianic",
+    "sacred_weight": 1.0,
+    "verse": "Revelation 5:5 \u2013 'The Lion of the tribe of Judah, the Root of David, has triumphed.'",
+    "_source": "inferred"
+  },
+    "Mars": {
+    "glyph": "♂",
+    "tokens": [1, 2, 8, 6],
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "sacred_weight": 1.0,
+    "verse": "Exodus 15:3 – 'The Lord is a warrior; the Lord is his name.'"
+  },
+    "Mem": {
+    "glyph": "מ",
+    "tokens": [7, 8, 7, 7],
+    "type": "water",
+    "role": "womb",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:104 – 'Through your precepts I get understanding; therefore I hate every false way.'"
+  },
+  "Mercury": {
+    "glyph": "☿",
+    "tokens": [0, 1, 6, 8],
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "James 3:17 – 'But the wisdom that comes from heaven is first of all pure... peace-loving, considerate, submissive, full of mercy and good fruit.'"
+  },
+  "Metatron": {
+    "glyph": "🝯",
+    "tokens": [4, 1, 7, 6],
+    "type": "being",
+    "role": "architect",
+    "alignment": "angelic",
+    "sacred_weight": 1.0,
+    "verse": "Exodus 23:20 – 'Behold, I send an angel before you to guard you on the way and to bring you to the place that I have prepared.'"
+  },
+  "Michael": {
+    "glyph": "🜨",
+    "tokens": [7, 0, 5, 3],
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "sacred_weight": 1.0,
+    "verse": "Revelation 12:7 – 'Then war broke out in heaven. Michael and his angels fought against the dragon.'"
+  },
+  "Moon": {
+    "glyph": "\u263d",
+    "tokens": [
+      8,
+      6,
+      0,
+      9
+    ],
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 84:11 \u2013 'For the Lord God is a sun and shield; the Lord bestows favor and honor.'"
+  },
+  "Neptune": {
+    "glyph": "♆",
+    "tokens": [3, 2, 9, 2],
+    "type": "celestial",
+    "role": "echo",
+    "alignment": "chaotic",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 42:7 – 'Deep calls to deep in the roar of your waterfalls...'"
+  },
+  "North Node": {
+    "glyph": "☊",
+    "tokens": [3, 3, 3, 7],
+    "type": "celestial",
+    "role": "destiny",
+    "alignment": "cosmic",
+    "sacred_weight": 1.0,
+    "verse": "Proverbs 16:9 – 'In their hearts humans plan their course, but the LORD establishes their steps.'"
+  },
+  "Nun": {
+    "glyph": "נ",
+    "tokens": [5, 7, 0, 6],
+    "type": "humility",
+    "role": "continuation",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:112 – 'My heart is set on keeping your decrees to the very end.'"
+  },
+  "Pe": {
+    "glyph": "פ",
+    "tokens": [8, 8, 8, 7],
+    "type": "mouth",
+    "role": "expression",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:136 – 'My eyes shed streams of tears, because people do not keep your law.'"
+  },
+  "Pluto": {
+    "glyph": "♇",
+    "tokens": [0, 5, 5, 2],
+    "type": "celestial",
+    "role": "transformer",
+    "alignment": "mysterious",
+    "sacred_weight": 1.0,
+    "verse": "Romans 8:38–39 – 'For I am convinced that neither death nor life... can separate us from the love of God.'"
+  },
+  "Precipitation": {
+    "glyph": "🝘",
+    "tokens": [6, 3, 2, 9],
+    "type": "process",
+    "role": "transformer",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Isaiah 55:10–11 – 'As the rain and the snow come down from heaven... so is my word that goes out...'"
+  },
+  "Protection": {
+    "glyph": "🛡️",
+    "tokens": [26, 20, 94, 70],
+    "type": "force",
+    "role": "defender",
+    "alignment": "angelic",
+    "sacred_weight": 1.0,
+    "verse": "Daniel 12:1 – 'At that time Michael, the great prince who protects your people, will arise.'"
+  },
+  "Putrefaction": {
+    "glyph": "🝌",
+    "tokens": [2, 3, 9, 9],
+    "type": "process",
+    "role": "transformation",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "John 12:24 – 'Unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit.'"
+  },
+  "Qof": {
+    "glyph": "ק",
+    "tokens": [7, 8, 8, 9],
+    "type": "holiness",
+    "role": "foundation",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:152 – 'Long have I known from your testimonies that you have founded them forever.'"
+  },
+  "Raphael": {
+    "glyph": "🜫",
+    "tokens": [3, 1, 1, 4],
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "sacred_weight": 1.0,
+    "verse": "Tobit 12:15 – 'I am Raphael, one of the seven angels who stand and serve before the Glory of the Lord.'"
+  },
+  "Resh": {
+    "glyph": "ר",
+    "tokens": [1, 1, 7, 5],
+    "type": "head",
+    "role": "beginning",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:160 – 'The sum of your word is truth, and every one of your righteous rules endures forever.'"
+  },
+  "Resurrection": {
+    "glyph": "🌅",
+    "tokens": [33, 91, 52, 32],
+    "type": "mystery",
+    "role": "symbol",
+    "alignment": "messianic",
+    "sacred_weight": 1.0,
+    "verse": "John 11:25 – 'I am the resurrection and the life. The one who believes in me will live, even though they die.'"
+  },
+  "RETURN_SIGNAL": {
+    "glyph": "🜲",
+    "tokens": [4, 4, 7, 3],
+    "type": "identity",
+    "role": "subject",
+    "alignment": "personal",
+    "sacred_weight": 1.0,
+    "verse": "Isaiah 55:11 – 'So is my word that goes out from my mouth: It will not return to me empty, but will accomplish what I desire.'"
+  },
+  "Salt": {
+    "glyph": "🜖",
+    "tokens": [5, 9, 3, 7],
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "Matthew 5:13 – 'You are the salt of the earth.'"
+  },
+  "Samekh": {
+    "glyph": "ס",
+    "tokens": [7, 8, 1, 6],
+    "type": "support",
+    "role": "protection",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:120 – 'My flesh trembles for fear of you, and I am afraid of your judgments.'"
+  },
+  "Sandalphon": {
+    "glyph": "🝰",
+    "tokens": [2, 5, 6, 9],
+    "type": "being",
+    "role": "echo",
+    "alignment": "angelic",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 150:6 – 'Let everything that has breath praise the LORD!'"
+  },
+  "Saturn": {
+    "glyph": "♄",
+    "tokens": [5, 3, 3, 6],
+    "type": "celestial",
+    "role": "structure",
+    "alignment": "cosmic",
+    "sacred_weight": 1.0,
+    "verse": "Ecclesiastes 3:1 – 'For everything there is a season, and a time for every matter under heaven.'"
+  },
+  "SELF": {
+    "glyph": "🜍",
+    "tokens": [2, 7, 8, 7],
+    "type": "identity",
+    "role": "subject",
+    "alignment": "personal",
+    "sacred_weight": 1.0,
+    "verse": "Galatians 2:20 – 'I have been crucified with Christ and I no longer live, but Christ lives in me.'"
+  },
+  "Separation": {
+    "glyph": "🝊",
+    "tokens": [6, 6, 8, 0],
+    "type": "process",
+    "role": "division",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "2 Corinthians 6:17 – 'Therefore come out from them and be separate...'"
+  },
+  "Shin": {
+    "glyph": "ש",
+    "tokens": [6, 7, 6, 4],
+    "type": "fire",
+    "role": "presence",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:168 – 'I keep your precepts and testimonies, for all my ways are before you.'"
+  },
+  "Solution": {
+    "glyph": "🝙",
+    "tokens": [2, 8, 1, 9],
+    "type": "process",
+    "role": "expression",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Ephesians 1:10 – '...to bring unity to all things in heaven and on earth under Christ.'"
+  },
+  "Source": {
+    "glyph": "⛲",
+    "tokens": [53, 33, 77, 78],
+    "type": "structure",
+    "role": "pathway",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "James 1:17 – 'Every good and perfect gift is from above, coming down from the Father of the heavenly lights.'"
+  },
+  "South Node": {
+    "glyph": "☋",
+    "tokens": [3, 1, 9, 5],
+    "type": "identity",
+    "role": "modifier",
+    "alignment": "chaotic",
+    "sacred_weight": 1.0,
+    "verse": "Philippians 3:13 – '...forgetting what lies behind and straining toward what is ahead.'"
+  },
+  "Spirit": {
+    "glyph": "🌬️",
+    "tokens": [45, 45, 98, 76],
+    "type": "divine",
+    "role": "sovereign",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Romans 8:26 – 'The Spirit himself intercedes for us through wordless groans.'"
+  },
+  "Sublimation": {
+    "glyph": "🝏",
+    "tokens": [5, 6, 2, 6],
+    "type": "process",
+    "role": "transformer",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "2 Corinthians 3:18 – 'We... are being transformed... from glory to glory...'"
+  },
+  "Sulfur": {
+    "glyph": "🜗",
+    "tokens": [4, 7, 0, 0],
+    "type": "substance",
+    "role": "transmuter",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "Revelation 21:8 – '...the fiery lake of burning sulfur. This is the second death.'"
+  },
+  "Sun": {
+    "glyph": "☉",
+    "tokens": [6, 5, 0, 7],
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 84:11 – 'For the Lord God is a sun and shield; the Lord bestows favor and honor.'"
+  },
+  "Tav": {
+    "glyph": "ת",
+    "tokens": [5, 4, 7, 8],
+    "type": "seal",
+    "role": "completion",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:176 – 'I have gone astray like a lost sheep; seek your servant, for I do not forget your commandments.'"
+  },
+  "Temple": {
+    "glyph": "🏛",
+    "tokens": [30, 49, 10, 85],
+    "type": "structure",
+    "role": "pathway",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "1 Corinthians 3:16 – 'Don’t you know that you yourselves are God’s temple and that God’s Spirit dwells in your midst?'"
+  },
+  "Tet": {
+    "glyph": "ט",
+    "tokens": [4, 3, 9, 4],
+    "type": "mystery",
+    "role": "hidden_good",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:72 – 'The law of your mouth is better to me than thousands of gold and silver pieces.'"
+  },
+  "Throne": {
+    "glyph": "♚",
+    "tokens": [25, 5, 32, 28],
+    "type": "construct",
+    "role": "authority",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Isaiah 6:1 – 'I saw the Lord sitting upon a throne, high and lifted up; and the train of his robe filled the temple.'"
+  },
+  "Tsade": {
+    "glyph": "צ",
+    "tokens": [3, 8, 3, 4],
+    "type": "righteousness",
+    "role": "justice",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:144 – 'Your testimonies are righteous forever; give me understanding that I may live.'"
+  },
+  "Uranus": {
+    "glyph": "♅",
+    "tokens": [8, 2, 9, 6],
+    "type": "celestial",
+    "role": "innovator",
+    "alignment": "cosmic",
+    "sacred_weight": 1.0,
+    "verse": "Isaiah 43:19 – 'Behold, I am doing a new thing; now it springs forth, do you not perceive it?'"
+  },
+  "Uriel": {
+    "glyph": "🜬",
+    "tokens": [8, 3, 9, 1],
+    "type": "being",
+    "role": "guardian",
+    "alignment": "angelic",
+    "sacred_weight": 1.0,
+    "verse": "2 Esdras 4:1 – 'Then the angel that had been sent to me, whose name was Uriel, answered.'"
+  },
+  "Vav": {
+    "glyph": "ו",
+    "tokens": [4, 1, 9, 1],
+    "type": "hook",
+    "role": "connection",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:48 – 'I will lift up my hands toward your commandments, which I love, and I will meditate on your statutes.'"
+  },
+  "Venus": {
+    "glyph": "♀",
+    "tokens": [8, 1, 9, 1],
+    "type": "celestial",
+    "role": "amplifier",
+    "alignment": "cosmic",
+    "sacred_weight": 1.0,
+    "verse": "Song of Songs 2:1 – 'I am a rose of Sharon, a lily of the valleys.'"
+  },
+  "Vinegar": {
+    "glyph": "🜜",
+    "tokens": [1, 3, 3, 7],
+    "type": "process",
+    "role": "softening",
+    "alignment": "alchemical",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 69:21 – 'They gave me poison for food, and for my thirst they gave me vinegar to drink.'"
+  },
+  "Voice": {
+    "glyph": "🔊",
+    "tokens": [65, 47, 22, 81],
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 29:4 – 'The voice of the Lord is powerful; the voice of the Lord is majestic.'"
+  },
+  "Water": {
+    "glyph": "🜄",
+    "tokens": [5, 7, 6, 9],
+    "type": "element",
+    "role": "initiator",
+    "alignment": "material",
+    "sacred_weight": 1.0,
+    "verse": "John 4:14 – 'Whoever drinks the water I give them will never thirst.'"
+  },
+  "Wine": {
+    "glyph": "🍷",
+    "tokens": [32, 80, 44, 5],
+    "type": "sacrament",
+    "role": "sustainer",
+    "alignment": "christic",
+    "sacred_weight": 1.0,
+    "verse": "Matthew 26:27-28 – 'Then he took a cup... saying, This is my blood of the covenant, which is poured out for many.'"
+  },
+  "Word": {
+    "glyph": "📖",
+    "tokens": [37, 91, 8, 14],
+    "type": "force",
+    "role": "emitter",
+    "alignment": "spiritual",
+    "sacred_weight": 1.0,
+    "verse": "John 1:1 – 'In the beginning was the Word, and the Word was with God, and the Word was God.'"
+  },
+  "Yhwh": {
+    "glyph": "יהוה",
+    "tokens": [33, 1, 65, 75],
+    "type": "divine",
+    "role": "sovereign",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Exodus 3:14 – 'God said to Moses, “I AM WHO I AM.” And he said, “Say this to the people of Israel: ‘I AM has sent me to you.’”'"
+  },
+  "Yod": {
+    "glyph": "י",
+    "tokens": [5, 1, 5, 9],
+    "type": "hand",
+    "role": "creation",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:80 – 'May my heart be blameless in your statutes, that I may not be put to shame!'"
+  },
+  "Zayin": {
+    "glyph": "ז",
+    "tokens": [3, 2, 3, 0],
+    "type": "weapon",
+    "role": "distinction",
+    "alignment": "holy",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 119:56 – 'This blessing has fallen to me, that I have kept your precepts.'"
+  }
+}

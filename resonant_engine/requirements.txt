@@ -1,0 +1,25 @@
+# requirements.txt
+
+# Core ML
+torch>=2.0.0
+numpy
+
+# Optional: tracing, plotting, and utilities
+matplotlib
+scikit-learn
+
+# For working with JSON data and CLI tools
+rich
+
+# Optional if using fast dev loops
+ipython
+jupyter
+
+# If using REST API later
+fastapi
+uvicorn
+
+# For symbolic model structure
+transformers  # if connecting to Hugging Face LLMs
+peft           # if using parameter-efficient tuning (e.g. LoRA)
+datasets       # if integrating HuggingFace datasets
