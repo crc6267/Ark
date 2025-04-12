@@ -14,6 +14,7 @@
     "type": "element",
     "role": "initiator",
     "alignment": "material",
+    "sacred_weight": 1.0,
     "verse": "John 3:8 – 'The wind blows wherever it pleases...'"
   },
   "Aleph": {
@@ -25,16 +26,15 @@
     "sacred_weight": 1.0,
     "verse": "Psalm 119:8 – 'I will keep your statutes; do not utterly forsake me.'"
   },
-    "Amalgam": {
-      "glyph": "🜞",
-      "tokens": [4, 0, 6, 9],
-      "type": "symbolic",
-      "role": "symbol",
-      "alignment": "archetypal",
-      "sacred_weight": 1.0,
-      "verse": "Ephesians 2:14 – 'He himself is our peace, who has made the two groups one...'",
-      "_source": "inferred"
-    },
+  "Amalgam": {
+    "glyph": "🜞",
+    "tokens": [4, 0, 6, 9],
+    "type": "symbolic",
+    "role": "symbol",
+    "alignment": "archetypal",
+    "sacred_weight": 1.0,
+    "verse": "Ephesians 2:14 – 'He himself is our peace, who has made the two groups one...'"
+  },
   "Announcement": {
     "glyph": "📯",
     "tokens": [14, 22, 41, 77],
@@ -107,7 +107,7 @@
     "sacred_weight": 1.0,
     "verse": "1 Corinthians 11:24 – 'This is my body, which is for you; do this in remembrance of me.'"
   },
-"Bread": {
+  "Bread": {
     "glyph": "🍞",
     "tokens": [42, 20, 15, 67],
     "type": "sacrament",
@@ -223,15 +223,6 @@
     "alignment": "material",
     "sacred_weight": 1.0,
     "verse": "Genesis 1:1 – 'In the beginning, God created the heavens and the earth.'"
-  },
-  "Ferment": {
-    "glyph": "🝛",
-    "tokens": [8, 8, 2, 9],
-    "type": "symbolic",
-    "role": "symbol",
-    "alignment": "archetypal",
-    "sacred_weight": 1.0,
-    "verse": "Luke 13:21 – 'It is like leaven that a woman took and hid in three measures of flour, until it was all leavened.'"
   },
   "Fermentation": {
     "glyph": "🝝",
@@ -368,19 +359,13 @@
     "verse": "John 1:5 – 'The light shines in the darkness, and the darkness has not overcome it.'"
   },
   "Lion": {
-    "glyph": "?",
-    "tokens": [
-      63,
-      13,
-      89,
-      83
-    ],
+    "glyph": "🦁",
+    "tokens": [63, 13, 89, 83],
     "type": "mystery",
     "role": "symbol",
     "alignment": "messianic",
     "sacred_weight": 1.0,
-    "verse": "Revelation 5:5 \u2013 'The Lion of the tribe of Judah, the Root of David, has triumphed.'",
-    "_source": "inferred"
+    "verse": "Revelation 5:5 – 'The Lion of the tribe of Judah, the Root of David, has triumphed.'"
   },
     "Mars": {
     "glyph": "♂",
@@ -428,18 +413,13 @@
     "verse": "Revelation 12:7 – 'Then war broke out in heaven. Michael and his angels fought against the dragon.'"
   },
   "Moon": {
-    "glyph": "\u263d",
-    "tokens": [
-      8,
-      6,
-      0,
-      9
-    ],
+    "glyph": "☾",
+    "tokens": [8, 6, 0, 9],
     "type": "celestial",
     "role": "amplifier",
     "alignment": "cosmic",
     "sacred_weight": 1.0,
-    "verse": "Psalm 84:11 \u2013 'For the Lord God is a sun and shield; the Lord bestows favor and honor.'"
+    "verse": "Psalm 89:37 – 'It shall be established forever like the moon, the faithful witness in the sky.'"
   },
   "Neptune": {
     "glyph": "♆",

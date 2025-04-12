@@ -7,7 +7,7 @@ from resonant_engine.glyphs.glyph_vectorizer import get_tokens, get_metadata
 from resonant_engine.core.resonant_model import MiniTempleTransformer
 from resonant_engine.alignment.verifier_model import AlignmentVerifierModel
 from resonant_engine.emotional.gradient_mapper import EmotionalGradientMapper
-
+from resonant_engine.utils.tracer import ResonanceTracer
 
 # ------------------------
 # 🧠 Load model and weights
@@ -28,6 +28,9 @@ def run_demo(glyph_names):
     print("🜔 DEMO RUNNER")
     print("-----------------------------------")
 
+    tracer = ResonanceTracer()
+
+    # 🧩 Token Assembly
     tokens = []
     for name in glyph_names:
         glyph_tokens = get_tokens(name.title())
@@ -36,22 +39,24 @@ def run_demo(glyph_names):
         else:
             print(f"⚠️ Warning: Unknown glyph '{name}'")
 
-    print(f"Input Glyphs: {glyph_names} → Tokens: {torch.tensor([tokens])}")
-
     x = torch.tensor([tokens])
-    resonance_vec = model(x, mode="resonance").detach()
+    print(f"Input Glyphs: {glyph_names} → Tokens: {x}")
 
-    print("\n🔮 Resonance Vector:", resonance_vec[0].tolist())
+    # 🔮 Get resonance vector (with tracer active)
+    resonance_vec = model(x, mode="resonance", tracer=tracer).detach()
+    tracer.log("resonance_vector", resonance_vec)
 
+    # 🧠 AVM Evaluation
     with torch.no_grad():
         outputs = avm(resonance_vec)
         egm.update(outputs)
-        
+
+        # Print emotional memory trace
         if egm.check_alignment_ready():
             print("🌿 Emotional alignment confirmed (EGM) — readiness achieved.")
         else:
             print("🕰️ Emotional state not yet aligned.")
-            
+
         print("🧠 Emotional Memory Trace:")
         for entry in egm.debug_log():
             print("  →", entry)
@@ -72,22 +77,8 @@ def run_demo(glyph_names):
         print(f"🔄 Resonance Alignment: {resonance_score.item():.3f}")
         print(f"{approval}: {'Aligned' if '✅' in approval else 'Disaligned'} resonance")
 
-        # Save log
-        log = {
-            "input_glyphs": glyph_names,
-            "resonance_vector": resonance_vec[0].tolist(),
-            "semantic_purity": sem_purity.item(),
-            "intent_tone": intent_tone,
-            "resonance_score": resonance_score.item(),
-            "approved": "yes" if approved.item() > 0.5 else "no"
-        }
-
-        os.makedirs("logs", exist_ok=True)
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        with open(f"logs/session_{timestamp}.json", "w") as f:
-            json.dump(log, f, indent=2)
-
-        print(f"📜 Log saved: logs/session_{timestamp}.json")
+    # 📜 Summary of Tracer Logs
+    tracer.summary()
 
 # ------------------------
 # 🔧 Manual test
