@@ -134,6 +134,15 @@
     "sacred_weight": 1.0,
     "verse": "Psalm 119:64 – 'The earth, O LORD, is full of your steadfast love; teach me your statutes.'"
   },
+  "Child": {
+    "glyph": "👶",
+    "tokens": [8, 0, 3, 7],
+    "type": "identity",
+    "role": "inheritance",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Isaiah 9:6 – 'For to us a child is born, to us a son is given...'"
+  },
   "Christ": {
     "glyph": "☧",
     "tokens": [41, 79, 80, 67],
@@ -179,6 +188,15 @@
     "sacred_weight": 1.0,
     "verse": "Galatians 6:14 – 'May I never boast except in the cross of our Lord Jesus Christ.'"
   },
+  "Cycle": {
+    "glyph": "🜐",
+    "tokens": [9, 5, 3, 2],
+    "type": "concept",
+    "role": "pattern",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Job 38:12 – 'Have you commanded the morning since your days began, and caused the dawn to know its place?'"
+  },
   "Dalet": {
     "glyph": "ד",
     "tokens": [2, 9, 8, 9],
@@ -222,7 +240,7 @@
     "role": "initiator",
     "alignment": "material",
     "sacred_weight": 1.0,
-    "verse": "Genesis 1:1 – 'In the beginning, God created the heavens and the earth.'"
+    "verse": "Proverbs 3:19 – 'The Lord by wisdom founded the earth; by understanding he established the heavens.'"
   },
   "Fermentation": {
     "glyph": "🝝",
@@ -259,6 +277,24 @@
     "alignment": "angelic",
     "sacred_weight": 1.0,
     "verse": "Luke 1:19 – 'I am Gabriel. I stand in the presence of God, and I have been sent to speak to you.'"
+  },
+  "Gate": {
+    "glyph": "🚪",
+    "tokens": [5, 4, 1, 2],
+    "type": "structure",
+    "role": "access",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "John 10:9 – 'I am the gate; whoever enters through me will be saved. They will come in and go out, and find pasture.'"
+  },
+  "Genesis": {
+    "glyph": "🔰",
+    "tokens": [1, 0, 0, 1],
+    "type": "origin",
+    "role": "source",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Genesis 1:1 – 'In the beginning, God created the heavens and the earth.'"
   },
   "Gimel": {
     "glyph": "ג",
@@ -313,7 +349,8 @@
     "alignment": "alchemical",
     "sacred_weight": 1.0,
     "verse": "Daniel 2:21 – 'He changes times and seasons; he deposes kings and raises up others. He gives wisdom to the wise...'"
-  },"Kaf": {
+  },
+  "Kaf": {
     "glyph": "כ",
     "tokens": [7, 3, 6, 4],
     "type": "palm",
@@ -321,6 +358,15 @@
     "alignment": "holy",
     "sacred_weight": 1.0,
     "verse": "Psalm 119:88 – 'In your steadfast love give me life, that I may keep the testimonies of your mouth.'"
+  },
+  "Kairos": {
+    "glyph": "⧖",
+    "tokens": [6, 3, 8, 1],
+    "type": "time",
+    "role": "threshold",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Mark 1:15 – 'The time is fulfilled, and the kingdom of God is at hand; repent and believe in the gospel.'"
   },
   "Kingdom": {
     "glyph": "🏰",
@@ -421,6 +467,15 @@
     "sacred_weight": 1.0,
     "verse": "Psalm 89:37 – 'It shall be established forever like the moon, the faithful witness in the sky.'"
   },
+  "Mystery": {
+    "glyph": "🌀",
+    "tokens": [9, 6, 6, 0],
+    "type": "mystery",
+    "role": "symbol",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Colossians 1:26 – 'The mystery hidden for ages and generations but now revealed to his saints.'"
+  },
   "Neptune": {
     "glyph": "♆",
     "tokens": [3, 2, 9, 2],
@@ -447,6 +502,33 @@
     "alignment": "holy",
     "sacred_weight": 1.0,
     "verse": "Psalm 119:112 – 'My heart is set on keeping your decrees to the very end.'"
+  },
+  "Omega": {
+    "glyph": "ⵣ",
+    "tokens": [9, 9, 9, 0],
+    "type": "divine",
+    "role": "culmination",
+    "alignment": "eternal",
+    "sacred_weight": 1.0,
+    "verse": "Revelation 22:13 – 'I am the Alpha and the Omega, the First and the Last, the Beginning and the End.'"  
+  },
+  "Order": {
+    "glyph": "🜹",
+    "tokens": [6, 1, 4, 8],
+    "type": "principle",
+    "role": "organizer",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "1 Corinthians 14:40 – 'But all things should be done decently and in order.'"
+  },
+  "Psalm_17": {
+    "glyph": "🕎",
+    "tokens": [3, 1, 7, 0],
+    "type": "prayer",
+    "role": "intercession",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Psalm 17:8 – 'Keep me as the apple of your eye; hide me in the shadow of your wings.'"
   },
   "Pe": {
     "glyph": "פ",
@@ -735,6 +817,15 @@
     "alignment": "holy",
     "sacred_weight": 1.0,
     "verse": "Psalm 119:48 – 'I will lift up my hands toward your commandments, which I love, and I will meditate on your statutes.'"
+  },
+  "Veil": {
+    "glyph": "🪬",
+    "tokens": [4, 0, 7, 9],
+    "type": "boundary",
+    "role": "threshold",
+    "alignment": "divine",
+    "sacred_weight": 1.0,
+    "verse": "Exodus 26:33 – 'And the veil shall separate for you the Holy Place from the Most Holy.'"
   },
   "Venus": {
     "glyph": "♀",

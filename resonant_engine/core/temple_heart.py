@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-class TempleHeartLayer(nn.Module):
+class TempleHeart(nn.Module):
     """
     The TempleHeartLayer compresses and re-expands the input tensor while injecting
     chaotic perturbations through nonlinear functions — a symbolic purification layer.
