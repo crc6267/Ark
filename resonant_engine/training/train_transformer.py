@@ -13,7 +13,7 @@ DATA_PATH = os.path.join(os.path.dirname(__file__), "data/glyph_training_set.jso
 SAVE_PATH = os.path.join(os.path.dirname(__file__), "../core/model_weights/temple_transformer.pt")
 METRIC_LOG = os.path.join(os.path.dirname(__file__), "../logs/training_metrics.jsonl")
 PLOT_PATH = os.path.join(os.path.dirname(__file__), "../logs/training_plot.png")
-EPCOHS = 7000
+EPCOHS = 14600
 
 # ----------------------------
 # 🧪 Training Loop
@@ -22,7 +22,7 @@ def train_transformer():
     dataset = GlyphSequenceDataset(DATA_PATH)
     loader = DataLoader(dataset, batch_size=16, shuffle=True)
 
-    model = MiniTempleTransformer(vocab_size=100, d_model=64, n_heads=4)
+    model = MiniTempleTransformer(vocab_size=101, d_model=11, n_heads=11)
     avm = AlignmentVerifierModel()
     avm.eval()
 

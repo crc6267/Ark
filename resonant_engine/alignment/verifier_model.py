@@ -9,7 +9,7 @@ class AlignmentVerifierModel(nn.Module):
     The AVM (Alignment Verifier Model) serves as the conscience of the Resonant Interface.
     It receives a symbolic output and evaluates its alignment against the source glyph or input intent.
     """
-    def __init__(self, input_dim=6, hidden_dim=32):
+    def __init__(self, input_dim=11, hidden_dim=7):
         super().__init__()
         self.fc1 = nn.Linear(input_dim, hidden_dim)
         self.fc2 = nn.Linear(hidden_dim, hidden_dim)

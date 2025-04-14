@@ -22,7 +22,7 @@ class MiniTempleTransformer(nn.Module):
         self.ln = nn.LayerNorm(d_model)
         self.fc_out = nn.Linear(d_model, vocab_size)
         self.temple_voice = TempleVoice(vocab_size, d_model)
-        self.resonance_head = nn.Linear(d_model, 11)  # 🔮 Projects to 11D vector
+        self.resonance_head = nn.Linear(d_model, 11)  # 🔮 Projects to 8D vector
 
     def forward(self, x, mode="logits", tracer=None):
         """
