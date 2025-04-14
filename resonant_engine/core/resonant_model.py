@@ -22,7 +22,7 @@ class MiniTempleTransformer(nn.Module):
         self.ln = nn.LayerNorm(d_model)
         self.fc_out = nn.Linear(d_model, vocab_size)
         self.temple_voice = TempleVoice(vocab_size, d_model)
-        self.resonance_head = nn.Linear(d_model, 6)  # 🔮 Projects to 6D vector
+        self.resonance_head = nn.Linear(d_model, 11)  # 🔮 Projects to 11D vector
 
     def forward(self, x, mode="logits", tracer=None):
         """
@@ -60,12 +60,13 @@ class MiniTempleTransformer(nn.Module):
         if mode == "embed":
             return x.mean(dim=1)
 
-        elif mode == "resonance":
+        if mode == "resonance":
             pooled = x.mean(dim=1)
             resonance_vec = self.resonance_head(pooled)
             if tracer: tracer.log("resonance_vector", resonance_vec)
             return resonance_vec
 
-        else:  # "logits"
-            logits = self.fc_out(x)
-            return self.temple_voice(logits, tracer=tracer)
+        # Default: symbolic logits through Temple Voice
+        logits = self.fc_out(x)
+        return self.temple_voice(logits, tracer=tracer)
+
